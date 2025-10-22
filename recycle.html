@@ -9,10 +9,31 @@
 </head>
 
 <body>
+    <div class="bg-layer" aria-hidden="true">
+        <div class="gradient"></div>
+        <div class="cloth c1" aria-hidden="true"></div>
+        <div class="cloth c2" aria-hidden="true"></div>
+        <div class="cloth c3" aria-hidden="true"></div>
+    </div>
     <header>
         <div class="header">
-            <h1 class="logo">リサイクル</h1>
-            <nav class="nav">
+            <h1 class="logo brand">
+                <a href="index.html" class="brand-link" aria-label="ホームへ">
+                    <span class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">タイトル</span>
+                </a>
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
                 <a href="index.html">ホーム</a>
                 <a href="usedclothes.html">古着</a>
                 <a href="rebox.html">回収ボックス</a>
@@ -27,7 +48,7 @@
     </header>
 
     <main>
-    <div class="slogan" style="font-weight: bold;">リサイクルにはどんなものがあるの？？</div>
+    <div class="slogan">リサイクルにはどんなものがあるの？？</div>
     <p class="toi">リサイクルと言われて皆さんはどのようなものを思い浮かべますか？？etc.</p>
 
     <h2 class="material">マテリアルリサイクル</h2>
@@ -59,6 +80,28 @@
             <a class="in" href="interview.html"><span>インタビュー</span></a>
         </div>
 
-</main>
+    <script>
+      // ハンバーガーメニュー制御
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        if (!menuToggle || !nav) return;
+        menuToggle.addEventListener('click', function() {
+          menuToggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+        document.addEventListener('click', function(e) {
+          if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+          }
+        });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+          menuToggle.classList.remove('active');
+          nav.classList.remove('active');
+        }));
+      });
+    </script>
+  </main>
 </body>
 </html>

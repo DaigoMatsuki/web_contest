@@ -1,110 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>スクロールで背景が切り替わるデモ</title>
-    <style>
-      :root {
-        /* 調整用の共通パラメータ */
-        --top: 65%;       /* 画面上部の割合 */
-        --blend: 6%;      /* 境界のグラデーション帯の厚み */
-      }
 
-      /* リセット最小限 */
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
-      body {
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
-        line-height: 1.6;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>webcontest</title>
+</head>
 
-      /* 各シーンは1画面分 */
-      .scene {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        color: #0b1b24;
-        position: relative;
-        overflow: hidden;
-      }
+<body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header>
+        <div class="header">
+            <h1 class="logo brand">
+                <a href="index.html" class="brand-link" aria-label="ホームへ">
+                    <span class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">タイトル</span>
+                </a>
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="index.html">ホーム</a>
+                <a href="usedclothes.html">古着</a>
+                <a href="rebox.html">回収ボックス</a>
+                <a href="process.html">仕分け</a>
+                <a href="rs.html">古着の行き先</a>
+                <a href="reuse.html">リユース</a>
+                <a href="recycle.html">リサイクル</a>
+                <a href="interview.html">インタビュー</a>
+                <a href="sitemap.html">サイトマップ</a>
+            </nav>
+        </div>
+    </header>
+ 
+    <main>
+        <div class="slogan">運命の分岐点</div>
 
-      /* 背景生成の共通ロジック。--top-color と --bottom-color を差し替える */
-      .scene::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: linear-gradient(
-          to bottom,
-          var(--top-color) 0%,
-          var(--top-color) calc(var(--top) - var(--blend)),
-          var(--bottom-color) calc(var(--top) + var(--blend)),
-          var(--bottom-color) 100%
-        );
-      }
+        <!-- 導入セクション -->
+        <div class="content-card">
+            <h1 class="card-title">服の運命を決める瞬間</h1>
+            <p class="card-content">
+                回収ボックスから集められた大量の古着。
+                <br>
+                ここから先は、一枚一枚の服に対して「この服はどこに行くべきか？」という重要な判断が下されます。
+                <br><br>
+                熟練した作業員の手により、服は3つの道のいずれかに振り分けられていきます。
+            </p>
+        </div>
+    
+        <!--衣類の選別-->
+        <div class="sorting">
+            <h2 class="sorting-title">衣類の選別現場</h2>
+            <p class="card-content">
+                集められた衣服は、専門の作業員によって一枚一枚丁寧に選別されます。
+                <br>
+                この作業は機械ではできない、人間の目と手による繊細な作業です。
+            </p>
+            <img src="images/sorting.jpg" alt="衣類の選別">
+            <p class="sorting-text">
+                素材、状態、ブランド、色、サイズなど、様々な基準で分けられます。
+                <br>
+                一人の作業員が1日に仕分けする衣類は約500〜800枚にもなります。
+                <br><br>
+                ここで服の「第二の人生」が決まるのです。
+            </p>
+        </div>
+        
+        <div class="comparison">
+            <h2 class="comparison-title">仕分けの基準</h2>
+            <div class="card-content">
+                <h3>リユース（そのまま再利用）</h3>
+                <p>
+                    ・まだ十分着用できる状態／目立つ汚れやダメージがない／ブランドや人気アイテム／サイズ表記が明確
+                    <br>
+                    → おおむね約30%が該当
+                </p>
+                
+                <h3>リサイクル（形を変えて再生）</h3>
+                <p>
+                    ・着用には適さないが素材として価値がある／軽度の汚れやダメージ／綿やポリエステルなど素材重視
+                    <br>
+                    → おおむね約50%が該当
+                </p>
+                
+                <h3>廃棄</h3>
+                <p>
+                    ・著しい汚損や激しい破損／リサイクル困難な複合素材／湿気によるカビ発生など
+                    <br>
+                    → おおむね約20%が該当
+                </p>
+            </div>
+        </div>
 
-      /* シーン1: 空色→自然の緑 */
-      .sky-forest {
-        --top-color: #87CEEB; /* skyblue */
-        --bottom-color: #2E8B57; /* sea green 風 */
-      }
+        <div class="content-card">
+            <h1 class="card-title">3つの道への旅立ち</h1>
+            <p class="card-content">
+                仕分けが完了した服たちは、それぞれ異なる場所へと向かいます。
+                <br>
+                どの道を歩むことになっても、そこには新しい価値と可能性が待っています。
+            </p>
+        </div>
 
-      /* シーン2: 砂漠のオレンジ→砂色 */
-      .desert {
-        --top-color: #E07A00; /* desert orange */
-        --bottom-color: #C2B280; /* sand / khaki */
-      }
+        <!-- 次のページへのボタン -->
+        <div class="btn">
+            <a class="dl" href="rs.html"><span>3つの道を詳しく見る</span></a>
+        </div>
+    </main>
 
-      /* 見出しカード */
-      .card {
-        background: rgba(255, 255, 255, 0.78);
-        backdrop-filter: blur(6px);
-        border-radius: 16px;
-        padding: 24px 28px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-        max-width: 720px;
-      }
-      .card h1 {
-        margin: 0 0 8px;
-        font-size: clamp(20px, 4.2vw, 40px);
-      }
-      .card p {
-        margin: 0;
-      }
-
-      /* 下部にスクロール誘導 */
-      .hint {
-        position: absolute;
-        bottom: 16px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 14px;
-        opacity: 0.8;
-      }
-
-      /* アクセシビリティ：コントラスト補助 */
-      @media (prefers-color-scheme: dark) {
-        .card { color: #0c1116; }
-      }
-    </style>
-  </head>
-  <body>
-    <section class="scene sky-forest" aria-label="空と自然の背景">
-      <div class="card">
-        <h1>空 65% / 緑 35%（境界はグラデーション）</h1>
-        <p>下にスクロールすると砂漠配色に切り替わります。必要に応じて <code>:root</code> の <code>--top</code> と <code>--blend</code> を調整してください。</p>
-      </div>
-      <div class="hint">Scroll</div>
-    </section>
-
-    <section class="scene desert" aria-label="砂漠の背景">
-      <div class="card">
-        <h1>砂漠のオレンジ 65% / 砂色 35%（境界はグラデーション）</h1>
-        <p>HTML と CSS のみで構成。JavaScript は不要です。</p>
-      </div>
-    </section>
-  </body>
+    <!-- ナビ用スクリプト（メニューのみ） -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.getElementById('nav');
+            if (!menuToggle || !nav) return;
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+                    menuToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
+            nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            }));
+        });
+    </script>
+    <script>
+        // 服をランダムに出現（最大3枚、出現間隔は不規則）
+        (function(){
+          const layer = document.querySelector('.bg-layer');
+          const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (!layer || prefersReduced) return;
+          const colors = ['#FF6A6A','#59C3FF','#A4DE02','#FFC857','#7E7F9A','#F4A261'];
+          const maxActive = 3; let active = 0;
+          const rand = (min, max) => Math.random() * (max - min) + min;
+          function spawn(){
+            if (active >= maxActive) return schedule();
+            active++;
+            const el = document.createElement('div');
+            el.className = 'cloth';
+            el.style.setProperty('--x', Math.round(rand(8,92)) + '%');
+            el.style.setProperty('--size', Math.round(rand(64,110)) + 'px');
+            const dur = rand(16,24).toFixed(2);
+            el.style.setProperty('--dur', dur + 's');
+            const color = colors[Math.floor(rand(0, colors.length))];
+            const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#','%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
+            el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
+            const cleanup = ()=>{ if (el.parentNode) { layer.removeChild(el); } active--; };
+            el.addEventListener('animationend', cleanup);
+            layer.appendChild(el);
+            setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
+            schedule();
+          }
+          function schedule(){ setTimeout(spawn, rand(1200, 3500)); }
+          schedule();
+        })();
+    </script>
+</body>
 </html>

@@ -8,10 +8,26 @@
     <title>webcontest</title>
 </head>
 <body>
+    <div class="bg-layer" aria-hidden="true"></div>
     <header>
         <div class="header">
-            <h1 class="logo">タイトル</h1>
-            <nav class="nav">
+            <h1 class="logo brand">
+                <a href="index.html" class="brand-link" aria-label="ホームへ">
+                    <span class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">タイトル</span>
+                </a>
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
                 <a href="index.html">ホーム</a>
                 <a href="usedclothes.html">古着</a>
                 <a href="rebox.html">回収ボックス</a>
@@ -27,11 +43,26 @@
     <main>
         <!-- 回収ボックスとの出会い -->
         <section class="trip">
+            <h1 class="card-title">回収ボックスの秘密</h1>
             <p>突然ですが、皆さんはこんなボックスを見たことはありますか？</p>
             <img src="images/box.jpg" alt="回収ボックス">
-            <p>これは服の回収ボックスです
+            <p class="caption">
+            これは服の回収ボックスです。
             <br>
-            ここでは、実際に回収ボックスに入れた服の行方を追ってみましょう。</p>
+            街中でよく見かけることがあるのではないでしょうか。
+            <br><br>
+            この回収ボックス、実は全国で約200以上の企業・団体によって設置されており、
+            <br>
+            合計で約10,000個にもあるんです。
+            <br>
+            年間で約3,000トンもの衣類が回収ボックスを通じて集められています。
+            <br><br>
+            あなたが入れた一枚の服は、この後どこへ向かうのでしょうか？
+            <br>
+            回収された服は、品質や状態によって異なる道を歩むことになります。
+            <br>
+            まずは回収から仕分けまでの流れを見てみましょう。
+            </p>
         </section>
 
         <!-- Step 1: 投入 -->
@@ -39,7 +70,17 @@
             <div class="content-card">
                 <h2 class="card-title">Step 1: 服を投入</h2>
                 <div class="card-content">
-                    <!-- 人々が服を投入する様子 -->
+                    <p>
+                        私たちが着なくなった服を回収ボックスに入れるところから始まります。
+                        <br>
+                        Tシャツ、ジーンズ、セーターなど、様々な衣類が投入されます。
+                        <br>
+                        多くの人が「捨てるには忍びない」「誰かに使ってもらえれば」
+                        <br>
+                        という想いで回収ボックスを利用しています。
+                        <br><br>
+                        一日に一つの回収ボックスには、約5〜20枚の衣類が投入されています。
+                    </p>
                 </div>
             </div>
         </div>
@@ -49,7 +90,17 @@
             <div class="content-card">
                 <h2 class="card-title">Step 2: 業者による回収</h2>
                 <div class="card-content">
-                    <!-- 回収業者が定期的にボックスから衣類を回収する -->
+                    <p>
+                        回収業者が定期的に各地の回収ボックスを巡回します。
+                        <br>
+                        通常は週に1〜2回、ボックスがいっぱいになったら回収が行われます。
+                        <br>
+                        作業員は大きな袋に衣類を詰め込み、専用の車両で運び出します。
+                        <br><br>
+                        この時点では、まだ服の仕分けは行われていません。
+                        <br>
+                        様々な種類の衣類が混在した状態で次の工程へと運ばれます。
+                    </p>
                 </div>
                 <img src="images/collect.jpg" alt="回収作業の様子">
             </div>
@@ -60,7 +111,17 @@
             <div class="content-card">
                 <h2 class="card-title">Step 3: 集積・運搬</h2>
                 <div class="card-content">
-                    <!-- 各地の回収ボックスから集められた服が倉庫に集積される -->
+                    <p>
+                        各地から回収された衣類は、大きな倉庫や集積所に運ばれます。
+                        <br>
+                        ここで初めて、膨大な量の古着が一箇所に集められることになります。
+                        <br>
+                        一つの集積所には、一日で数百キロから数トンもの衣類が集まります。
+                        <br><br>
+                        この段階で、次の工程である「仕分け」の準備が整います。
+                        <br>
+                        集積された服は、品質や状態によって運命が分かれることになるのです。
+                    </p>
                 </div>
             </div>
         </div>
@@ -70,17 +131,21 @@
             <div class="content-card">
                 <h2 class="card-title">Step 4: リサイクル業者への引き渡し</h2>
                 <div class="card-content">
-                    <!-- 回収業者からリサイクル業者に服が引き渡される -->
-                </div>
-            </div>
-        </div>
-
-        <!-- 数字で見る回収の実態 -->
-        <div class="content-grid">
-            <div class="content-card">
-                <h2 class="card-title">数字で見る回収の実態</h2>
-                <div class="card-content">
-                    <!-- 1日の回収量、回収頻度、処理される服の量など -->
+                    <p>
+                        集積された古着は、専門のリサイクル業者に引き渡されます。
+                        <br>
+                        この業者が、服の「運命」を決める重要な役割を担っています。
+                        <br>
+                        業者は長年の経験と専門知識を活かし、
+                        <br>
+                        一枚一枚の服を丁寧に検査・仕分けしていきます。
+                        <br><br>
+                        ここから先は、服の状態や種類によって
+                        <br>
+                        「リユース」「リサイクル」「廃棄」の3つの道に分かれます。
+                        <br>
+                        次のページでは、その詳しい仕分け工程を見ていきましょう。
+                    </p>
                 </div>
             </div>
         </div>
@@ -97,5 +162,67 @@
             </div>
         </footer>
     </main>
+
+    <!-- ナビ用スクリプト（メニューのみ） -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.getElementById('nav');
+            
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+                
+                document.addEventListener('click', function(e) {
+                    if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+                        menuToggle.classList.remove('active');
+                        nav.classList.remove('active');
+                    }
+                });
+                
+                const navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        nav.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+    <script>
+    // 背景に服をランダムに出現させる（控えめに最大3枚）
+    (function(){
+      const layer = document.querySelector('.bg-layer');
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!layer || prefersReduced) return;
+      const colors = ['#FF6A6A','#59C3FF','#A4DE02','#FFC857','#7E7F9A','#F4A261'];
+      const maxActive = 3;
+      let active = 0;
+      const rand = (min, max) => Math.random() * (max - min) + min;
+      function spawn(){
+        if (active >= maxActive) return schedule();
+        active++;
+        const el = document.createElement('div');
+        el.className = 'cloth';
+        el.style.setProperty('--x', Math.round(rand(8,92)) + '%');
+        el.style.setProperty('--size', Math.round(rand(64,110)) + 'px');
+        const dur = rand(16,24).toFixed(2);
+        el.style.setProperty('--dur', dur + 's');
+        const color = colors[Math.floor(rand(0, colors.length))];
+        const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#','%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
+        const cleanup = ()=>{ if (el.parentNode) { layer.removeChild(el); } active--; };
+        el.addEventListener('animationend', cleanup);
+        layer.appendChild(el);
+        setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
+        schedule();
+      }
+      function schedule(){ setTimeout(spawn, rand(1200, 3500)); }
+      schedule();
+    })();
+    </script>
 </body>
 </html>

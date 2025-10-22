@@ -10,10 +10,26 @@
 
  <!--各種リンクいれる？-->
 <body>
+    <div class="bg-layer" aria-hidden="true"></div>
     <header>
         <div class="header">
-            <h1 class="logo">タイトル</h1>
-            <nav class="nav">
+            <h1 class="logo brand">
+                <a href="index.html" class="brand-link" aria-label="ホームへ">
+                    <span class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">タイトル</span>
+                </a>
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
                 <a href="index.html">ホーム</a>
                 <a href="usedclothes.html">古着</a>
                 <a href="rebox.html">回収ボックス</a>
@@ -28,50 +44,149 @@
     </header>
 
     <main>
-        <!-- ヒーローセクション -->
-        <section class="hero-section">
-            <div class="slogan">Where do the collected clothes go?</div>
-            <div class="subslogan1">あなたが入れた一枚の服。</div>
-            <div class="subslogan2">それによって変わる生活。</div>
+        <!-- ヒーロー（hero-sectionの横にboxinを配置） -->
+        <section class="hero-wrap">
+            <section class="hero-section">
+                <div class="slogan">Where do the collected clothes go?</div>
+                <div class="subslogan1">あなたが入れた一枚の服。</div>
+                <div class="subslogan2">それは、どこへ向かうのでしょうか？</div>
+            </section>
+            <aside class="boxin" aria-label="紹介動画">
+                <video class="media" src="webtest_3.mp4" autoplay muted loop playsinline title="紹介動画"></video>
+            </aside>
         </section>
 
-        <!-- メインコンテンツ -->
+        <!-- 導入セクション -->
         <div class="content-card">
-            <h1 class="card-title">着なくなった服、古着。</h1>
+            <h1 class="card-title">着なくなった服の現実</h1>
             <p class="card-content">
-                    ボロボロになって。サイズが小さくなって。
+                    ボロボロになって。サイズが合わなくなって。
                     <br>
-                    様々な理由で着なくなった服を世間は古着といいます。
+                    デザインが古くなって。様々な理由で着なくなった服。
                     <br>
-                    皆さんはそのような古着を、どのように処分していますか？
+                    あなたはそんな服を、どのように手放していますか？
                     <br><br>
-                    日本では年間(2022年)、計79.8万トンの衣類が供給されており、
+                    実は、日本では毎年想像を超える量の服が消費され、
                     <br>
-                    その約9割に相当する計73.1万トンが
+                    そして捨てられているのです。
+            </p>
+        </div>
+
+        <!-- 統計データセクション -->
+        <div class="content-card">
+            <h1 class="card-title">衝撃の数字</h1>
+            <p class="card-content">
+                    日本では年間（2022年）、計<strong>79.8万トン</strong>の衣類が供給されています。
                     <br>
-                    企業や家庭から使用後に手放されていると推計されています。
+                    これは東京ドーム約64個分の重量に相当します。
                     <br><br>
-                    このうち、計47.0万トンが廃棄され、
+                    そして、その約9割に相当する計<strong>73.1万トン</strong>が
                     <br>
-                    残りの計26.0万トンが再利用されています。
+                    企業や家庭から使用後に手放されています。
                     <br><br>
-                    では、その再利用される古着は一体どこに行くのでしょうか？
-        </p>
+                    このうち、計<strong>47.0万トン</strong>が廃棄され、
+                    <br>
+                    残りの計<strong>26.0万トン</strong>が再利用されています。
+            </p>
+        </div>
+
+        <!-- 疑問提起セクション -->
+        <div class="content-card">
+            <h1 class="card-title">大きな疑問</h1>
+            <p class="card-content">
+                    では、その再利用される26.0万トンの古着は
+                    <br>
+                    一体どこに行くのでしょうか？
+                    <br><br>
+                    あなたが回収ボックスに入れた一枚の服は、
+                    <br>
+                    その後どのような旅をするのか。
+                    <br>
+                    私たちの知らない古着の世界を、
+                    <br>
+                    一緒に覗いてみませんか？
+                    <br><br>
+                    まずは、街でよく見かけるあの回収ボックスから
+                    <br>
+                    物語を始めてみましょう。
+            </p>
         </div>
 
         <!-- ボタン -->
         <div class="btn">
-            <a class="dl" href="rebox.html"><span>回収ボックス</span></a>
+            <a class="dl" href="rebox.html"><span>回収ボックスの旅を見る</span></a>
         </div>
 
         <!-- フッター -->
         <footer class="page-footer">
-            <div class="copyright">
+            <div class="copyright"></div>
                 <small>&copy; 2025 IT未来高等学校</small>
             </div>
         </footer>
     </main>
-</body>
-</html>
+
+    <script>
+        // ハンバーガーメニューの動作
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.getElementById('nav');
+            
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+                
+                // メニュー外をクリックした時にメニューを閉じる
+                document.addEventListener('click', function(e) {
+                    if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+                        menuToggle.classList.remove('active');
+                        nav.classList.remove('active');
+                    }
+                });
+                
+                // ナビゲーションリンクをクリックした時にメニューを閉じる
+                const navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        nav.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+    <script>
+    // 背景に服をランダムに出現させる
+    (function(){
+      const layer = document.querySelector('.bg-layer');
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!layer || prefersReduced) return;
+      const colors = ['#FF6A6A','#59C3FF','#A4DE02','#FFC857','#7E7F9A','#F4A261'];
+      const maxActive = 3; // 控えめに
+      let active = 0;
+      const rand = (min, max) => Math.random() * (max - min) + min;
+      function spawn(){
+        if (active >= maxActive) return schedule();
+        active++;
+        const el = document.createElement('div');
+        el.className = 'cloth';
+        el.style.setProperty('--x', Math.round(rand(8,92)) + '%');
+        el.style.setProperty('--size', Math.round(rand(64,110)) + 'px');
+        const dur = rand(16,24).toFixed(2);
+        el.style.setProperty('--dur', dur + 's');
+        const color = colors[Math.floor(rand(0, colors.length))];
+        const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#','%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
+        const cleanup = ()=>{ if (el.parentNode) { layer.removeChild(el); } active--; };
+        el.addEventListener('animationend', cleanup);
+        layer.appendChild(el);
+        setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
+        schedule();
+      }
+      function schedule(){ setTimeout(spawn, rand(1200, 3500)); }
+      schedule();
+    })();
+    </script>
 </body>
 </html>

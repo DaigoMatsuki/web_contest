@@ -9,10 +9,26 @@
 </head>
 
 <body>
+    <div class="bg-layer" aria-hidden="true"></div>
     <header>
         <div class="header">
-            <h1 class="logo">タイトル</h1>
-            <nav class="nav">
+            <h1 class="logo brand">
+                <a href="index.html" class="brand-link" aria-label="ホームへ">
+                    <span class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">タイトル</span>
+                </a>
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
                 <a href="index.html">ホーム</a>
                 <a href="usedclothes.html">古着</a>
                 <a href="rebox.html">回収ボックス</a>
@@ -27,8 +43,148 @@
     </header>
     <!--動画の上にかぶせる？-->
     <main>
-    <div class="slogan" style="font-weight: bold;">古着はどこにいくのだろうか？</div>
+        <div class="slogan">3つの道への分岐</div>
+
+        <!-- 導入セクション -->
+        <div class="content-card">
+            <h1 class="card-title">服たちの新しい人生</h1>
+            <p class="card-content">
+                仕分けが完了した服たちは、それぞれ異なる道を歩み始めます。
+                <br>
+                どの道も、服に新しい価値と意味を与える大切な役割を果たしています。
+                <br><br>
+                ここでは、3つの主要な行き先とその特徴を詳しく見ていきましょう。
+            </p>
+        </div>
+
+        <!-- リユースの道 -->
+        <div class="content-card">
+            <h2 class="card-title">🔄 リユースの道</h2>
+            <p class="card-content">
+                <strong>約30%の服が選ばれる道</strong>
+                • 海外輸出：年間約15万トン<br>
+                • 主な輸出先：東南アジア、アフリカ、中南米
+            </p>
+            <div class="btn">
+                <a class="dl" href="reuse.html"><span>リユースの詳細を見る</span></a>
+            </div>
+        </div>
+
+        <!-- リサイクルの道 -->
+        <div class="content-card">
+            <h2 class="card-title">♻️ リサイクルの道</h2>
+            <p class="card-content">
+                <strong>約50%の服が選ばれる道</strong>
+                <br><br>
+                着用には適さないが、素材として価値のある服は形を変えて生まれ変わります。
+                <br>
+                工業用ウエス、断熱材、新しい繊維製品など、様々な用途で活用されます。
+                <br><br>
+                • 工業用ウエス（清拭布）：年間約10万トン<br>
+                • 断熱材・クッション材：年間約8万トン<br>
+                • 新繊維製品への再生：年間約3万トン
+            </p>
+            <div class="btn">
+                <a class="dl" href="recycle.html"><span>リサイクルの詳細を見る</span></a>
+            </div>
+        </div>
+
+        <!-- 廃棄の道 -->
+        <div class="content-card">
+            <h2 class="card-title">🗑️ 廃棄の道</h2>
+            <p class="card-content">
+                <strong>約20%の服が選ばれる道</strong>
+                <br><br>
+                残念ながら、リユースもリサイクルもできない服は廃棄されます。
+                <br>
+                しかし、近年は廃棄率を下げるための技術開発が進んでおり、
+                <br>
+                将来的にはこの割合をさらに減らすことが期待されています。
+                <br><br>
+                • 主な廃棄理由：重度の汚損、複合素材、カビの発生<br>
+                • 廃棄方法：焼却処理、埋立処理<br>
+                • 課題：環境負荷の軽減、廃棄率の削減
+            </p>
+        </div>
+
+        <!-- まとめセクション -->
+        <div class="content-card">
+            <h1 class="card-title">循環する価値</h1>
+            <p class="card-content">
+                あなたが回収ボックスに入れた一枚の服は、
+                <br>
+                このようにして新しい価値を生み出し続けています。
+                <br><br>
+                リユースされる服は誰かの新しいお気に入りになり、
+                <br>
+                リサイクルされる服は全く違う形で社会に貢献し、
+                <br>
+                たとえ廃棄される服でも、その経験が技術革新につながっています。
+                <br><br>
+                次のページでは、実際にこの業界で働く人々の
+                <br>
+                生の声を聞いてみましょう。
+            </p>
+        </div>
+
+        <!-- インタビューページへのボタン -->
+        <div class="btn">
+            <a class="dl" href="interview.html"><span>現場の声を聞く</span></a>
+        </div>
     </main>
 
+    <!-- ナビ用スクリプト（メニューのみ） -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.getElementById('nav');
+            if (!menuToggle || !nav) return;
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+                    menuToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
+            nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            }));
+        });
+    </script>
+    <script>
+    // 背景に服をランダムに出現（最大3枚）
+    (function(){
+      const layer = document.querySelector('.bg-layer');
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!layer || prefersReduced) return;
+      const colors = ['#FF6A6A','#59C3FF','#A4DE02','#FFC857','#7E7F9A','#F4A261'];
+      const maxActive = 3; let active = 0;
+      const rand = (min, max) => Math.random() * (max - min) + min;
+      function spawn(){
+        if (active >= maxActive) return schedule();
+        active++;
+        const el = document.createElement('div');
+        el.className = 'cloth';
+        el.style.setProperty('--x', Math.round(rand(8,92)) + '%');
+        el.style.setProperty('--size', Math.round(rand(64,110)) + 'px');
+        const dur = rand(16,24).toFixed(2);
+        el.style.setProperty('--dur', dur + 's');
+        const color = colors[Math.floor(rand(0, colors.length))];
+        const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#','%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
+        const cleanup = ()=>{ if (el.parentNode) { layer.removeChild(el); } active--; };
+        el.addEventListener('animationend', cleanup);
+        layer.appendChild(el);
+        setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
+        schedule();
+      }
+      function schedule(){ setTimeout(spawn, rand(1200, 3500)); }
+      schedule();
+    })();
+    </script>
 </body>
 </html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>スクロールで背景が切り替わるデモ</title>
+    <style>
+      :root {
+        /* 調整用の共通パラメータ */
+        --top: 65%;       /* 画面上部の割合 */
+        --blend: 6%;      /* 境界のグラデーション帯の厚み */
+      }
+
+      /* リセット最小限 */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+        line-height: 1.6;
+      }
+
+      /* 各シーンは1画面分 */
+      .scene {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        color: #0b1b24;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* 背景生成の共通ロジック。--top-color と --bottom-color を差し替える */
+      .scene::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(
+          to bottom,
+          var(--top-color) 0%,
+          var(--top-color) calc(var(--top) - var(--blend)),
+          var(--bottom-color) calc(var(--top) + var(--blend)),
+          var(--bottom-color) 100%
+        );
+      }
+
+      /* シーン1: 空色→自然の緑 */
+      .sky-forest {
+        --top-color: #87CEEB; /* skyblue */
+        --bottom-color: #2E8B57; /* sea green 風 */
+      }
+
+      /* シーン2: 砂漠のオレンジ→砂色 */
+      .desert {
+        --top-color: #E07A00; /* desert orange */
+        --bottom-color: #C2B280; /* sand / khaki */
+      }
+
+      /* 見出しカード */
+      .card {
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(6px);
+        border-radius: 16px;
+        padding: 24px 28px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        max-width: 720px;
+      }
+      .card h1 {
+        margin: 0 0 8px;
+        font-size: clamp(20px, 4.2vw, 40px);
+      }
+      .card p {
+        margin: 0;
+      }
+
+      /* 下部にスクロール誘導 */
+      .hint {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        opacity: 0.8;
+      }
+
+      /* アクセシビリティ：コントラスト補助 */
+      @media (prefers-color-scheme: dark) {
+        .card { color: #0c1116; }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="scene sky-forest" aria-label="空と自然の背景">
+      <div class="card">
+        <h1>空 65% / 緑 35%（境界はグラデーション）</h1>
+        <p>下にスクロールすると砂漠配色に切り替わります。必要に応じて <code>:root</code> の <code>--top</code> と <code>--blend</code> を調整してください。</p>
+      </div>
+      <div class="hint">Scroll</div>
+    </section>
+
+    <section class="scene desert" aria-label="砂漠の背景">
+      <div class="card">
+        <h1>砂漠のオレンジ 65% / 砂色 35%（境界はグラデーション）</h1>
+        <p>HTML と CSS のみで構成。JavaScript は不要です。</p>
+      </div>
+    </section>
+  </body>
+</html>
