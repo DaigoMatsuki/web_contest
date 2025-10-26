@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>web</title>
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        
-        <div class="nav"><div class="nav-link">
-                <a href="#">ホーム</a>
-                <a href="#1">古着</a>
-                <a href="#2">回収ボックス</a>
-                <a href="#3">リユース・リサイクル</a>
-                <a href="#4">インタビュー</a>
-                <a href="#5">サイトマップ</a>
-            </div></div>
-        
-        <div class="top-video">
-            <video src="webtest_3.mp4" loop autoplay muted></video>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>webcontest</title>
+</head>
+
+ <!--各種リンクいれる？-->
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">タイトル</h1>
+            <nav class="nav">
+                <a href="index.html">ホーム</a>
+                <a href="usedclothes.html">古着</a>
+                <a href="rebox.html">回収ボックス</a>
+                <a href="process.html">仕分け</a>
+                <a href="rs.html">古着の行き先</a>
+                <a href="reuse.html">リユース</a>
+                <a href="recycle.html">リサイクル</a>
+                <a href="interview.html">インタビュー</a>
+                <a href="sitemap.html">サイトマップ</a>
+            </nav>
         </div>
-        
-        <div class="top-text">
-            <h1>回収された服の行き先</h1>
-            <p>あなたが入れた一枚の服はどこへ行くのでしょうか<br>海外への古着の寄付は本当に良いことなのでしょうか</p>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="hero-section">
+            <div class="slogan">Where do the collected clothes go?</div>
+            <div class="subslogan1">あなたが入れた一枚の服。</div>
+            <div class="subslogan2">それによって変わる生活。</div>
+        </section>
+
+        <!-- メインコンテンツ -->
+        <div class="content-card">
+            <h1 class="card-title">着なくなった服、古着。</h1>
+            <p class="card-content">
+                    ボロボロになって。サイズが小さくなって。
+                    <br>
+                    様々な理由で着なくなった服を世間は古着といいます。
+                    <br>
+                    皆さんはそのような古着を、どのように処分していますか？
+                    <br><br>
+                    日本では年間(2022年)、計79.8万トンの衣類が供給されており、
+                    <br>
+                    その約9割に相当する計73.1万トンが
+                    <br>
+                    企業や家庭から使用後に手放されていると推計されています。
+                    <br><br>
+                    このうち、計47.0万トンが廃棄され、
+                    <br>
+                    残りの計26.0万トンが再利用されています。
+                    <br><br>
+                    では、その再利用される古着は一体どこに行くのでしょうか？
+        </p>
         </div>
-        
-        <div class="main-con1" id="1">
-            <img src="wave-1200x240.svg">
-         <div class="card1">
-        <h1>着なくなった服の現実</h1>
-             <p>ボロボロになって。サイズが合わなくなって。</p>
-             <p>デザインが古くなって。様々な理由で着なくなった服。</p>
-             <p>あなたはそんな服を、どのように手放していますか？</p>
-             <br>
-             <p>実は、日本では毎年想像を超える量の服が消費され、</p>
-             <p>そして捨てられているのです。</p>
-             <p><a href="#" class="button"><strong>古着について</strong></a></p>
+
+        <!-- ボタン -->
+        <div class="btn">
+            <a class="dl" href="rebox.html"><span>回収ボックス</span></a>
         </div>
-        </div>
-        
-        <div class="main-con2" id="2">
-            <div class="card2">
-                <div class="text">
-                <h1>回収ボックスへ入れた<br>服はどこへ行く？</h1>
-                <p>あなたが回収ボックスへ入れた古着はどこへ<br>行くのでしょうか。まずは回収ボックスから、<br>古着の旅を見てみませんか？</p>
-                <p><a href="#" class="button2"><strong>古着の旅を見る</strong></a></p>
-                </div>
-                <img src="sunrise-5863751_1920.png"/>
+
+        <!-- フッター -->
+        <footer class="page-footer">
+            <div class="copyright">
+                <small>&copy; 2025 IT未来高等学校</small>
             </div>
-        </div>
-        
-        <div class="main-con3" id="3">
-            <div class="card3">
-            <img src="sunrise-5863751_1920.png" />
-            <div class="text">
-            <h1>リユース・リサイクル</h1>
-            <p>リユースについてリユースについてリユースに<br>ついてリサイクルについてリユースについてリサ<br>イクルについてリユースについてリサイクル</p>
-            <p><a href="#" class="button2"><strong>リユース・リサイクルについて</strong></a></p>
-                </div>
-            </div>
-        </div>
-    </body>
-    
+        </footer>
+    </main>
+</body>
 </html>
