@@ -21,13 +21,15 @@ html{
     max-width:1300px;
     z-index:1000;
     height:70px;
-    align-content:center;
     border-radius:10px;
 }
 
 .nav-link{
     width:fit-content;
-    margin:0 auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .nav a{
