@@ -181,7 +181,7 @@ a.button2:hover{
 
 .card3{
     width:fit-content;
-    position:absolute;;
+    position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
