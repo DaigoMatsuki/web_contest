@@ -25,7 +25,6 @@ html{
 }
 
 .nav-link{
-    width:fit-content;
     position:absolute;
     top:50%;
     left:50%;
@@ -150,7 +149,7 @@ a.button:hover{
 a.button2{
     text-decoration:none;
     color:white;
-    background-color:rgb(43,85,146);
+    background-color:rgb(56, 119, 211);
     position:relative;
     top:15px;
     padding-top:15px;
