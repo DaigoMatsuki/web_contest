@@ -2,76 +2,23 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>webcontest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="content.css">
+  <title>webcontest</title>
 </head>
+<div class="nav">
+  <img src="susuru.png">
+  <div class="nav-link">
+    <a href="index.html">ホーム</a>
+    <a href="usedclothes.html">古着</a>
+    <a href="rebox.html">回収ボックス</a>
+    <a href="recycle.html">リユース・リサイクル</a>
+    <a href="interview.html">インタビュー</a>
+    <a href="sitemap.html">サイトマップ</a>
+  </div>
+</div>
+<h1 class="card-title">インタビュー</h1>
+<div class="card">
+  </body>
 
-<body>
-    <div class="bg-layer" aria-hidden="true">
-        <div class="gradient"></div>
-        <div class="cloth c1" aria-hidden="true"></div>
-        <div class="cloth c2" aria-hidden="true"></div>
-        <div class="cloth c3" aria-hidden="true"></div>
-    </div>
-    <header>
-        <div class="header">
-            <h1 class="logo brand">
-                <a href="index.html" class="brand-link" aria-label="ホームへ">
-                    <span class="mark" aria-hidden="true">
-                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
-                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-                    <span class="brand-name">タイトル</span>
-                </a>
-            </h1>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="nav" id="nav">
-                <a href="index.html">ホーム</a>
-                <a href="usedclothes.html">古着</a>
-                <a href="rebox.html">回収ボックス</a>
-                <a href="process.html">仕分け</a>
-                <a href="rs.html">古着の行き先</a>
-                <a href="reuse.html">リユース</a>
-                <a href="recycle.html">リサイクル</a>
-                <a href="interview.html">インタビュー</a>
-                <a href="sitemap.html">サイトマップ</a>
-            </nav>
-        </div>
-    </header>
-   
-    <main>
-    <div class="slogan">ファイバーシーディーエム株式会社様　インタビュー</div>
-    </main>
-
-    <script>
-        // ハンバーガーメニュー制御
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menu-toggle');
-            const nav = document.getElementById('nav');
-            if (!menuToggle || !nav) return;
-            menuToggle.addEventListener('click', function() {
-                menuToggle.classList.toggle('active');
-                nav.classList.toggle('active');
-            });
-            document.addEventListener('click', function(e) {
-                if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
-                    menuToggle.classList.remove('active');
-                    nav.classList.remove('active');
-                }
-            });
-            nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                nav.classList.remove('active');
-            }));
-        });
-    </script>
-</body>
 </html>
