@@ -5,186 +5,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>webcontest</title>
+    <title>仕分け工程</title>
 </head>
 
-<body>
-    <div class="bg-layer" aria-hidden="true"></div>
-    <header>
-        <div class="header">
-            <h1 class="logo brand">
-                <a href="index.html" class="brand-link" aria-label="ホームへ">
-                    <span class="mark" aria-hidden="true">
-                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
-                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-                    <span class="brand-name">タイトル</span>
-                </a>
-            </h1>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+<body class="content-page">
+    <div class="nav">
+        <img src="susuru.png" class="nav-img" />
+        <div class="nav-link">
+            <a href="index.html">ホーム</a>
+            <a href="theme.html">テーマと背景</a>
+            <a href="usedclothes.html">古着</a>
+            <a href="rebox.html">回収ボックス</a>
+            <a href="reuse.html">リユース・リサイクル</a>
+            <a href="interview.html">インタビュー</a>
+            <a href="sitemap.html">サイトマップ</a>
+        </div>
+    </div>
+
+    <h1 class="card-title">仕分け工程</h1>
+
+    <div class="card">
+
+        <div style="background-color: rgb(240, 248, 255); padding: 35px; border-radius: 12px; margin: 40px 0;">
+            <h3 style="margin: 0 0 20px 0; font-size: 22px; color: rgb(13, 71, 161);">🔍 仕分けとは？</h3>
+            <p style="font-size: 17px; line-height: 2; margin: 0;">
+                集められた古着を<strong>状態・品質・種類</strong>によって分類する作業です。<br>
+                経験豊富な作業員が、一枚ずつ手に取り、その服の行く先を判断します。
+            </p>
+        </div>
+
+        <h2 style="margin-top: 60px; margin-bottom: 40px;">仕分けの5つの基準</h2>
+
+        <!-- 基準1: 外観チェック -->
+        <div style="background-color: rgb(227, 242, 253); padding: 40px; border-radius: 12px; margin: 40px 0;">
+            <h3 style="margin: 0 0 25px 0; font-size: 24px; color: rgb(13, 71, 161);">👀 基準1: 外観チェック</h3>
+            <p style="font-size: 17px; line-height: 2; margin-bottom: 25px;">
+                まず最初に、服の見た目を確認します。
+            </p>
+            <div style="background-color: white; padding: 30px; border-radius: 10px;">
+                <p style="margin: 0 0 15px 0; font-weight: bold; font-size: 18px; color: rgb(13, 71, 161);">チェック項目</p>
+                <ul style="line-height: 2.5; font-size: 17px; margin: 0;">
+                    <li><strong>汚れ</strong>：シミや泥汚れの有無</li>
+                    <li><strong>破れ</strong>：穴や裂け目がないか</li>
+                    <li><strong>色褪せ</strong>：変色や退色の程度</li>
+                    <li><strong>毛玉</strong>：表面の状態</li>
+                </ul>
             </div>
-            <nav class="nav" id="nav">
-                <a href="index.html">ホーム</a>
-                <a href="usedclothes.html">古着</a>
-                <a href="rebox.html">回収ボックス</a>
-                <a href="process.html">仕分け</a>
-                <a href="rs.html">古着の行き先</a>
-                <a href="reuse.html">リユース</a>
-                <a href="recycle.html">リサイクル</a>
-                <a href="interview.html">インタビュー</a>
-                <a href="sitemap.html">サイトマップ</a>
-            </nav>
-        </div>
-    </header>
-    <!--動画の上にかぶせる？-->
-    <main>
-        <div class="slogan">3つの道への分岐</div>
-
-        <!-- 導入セクション -->
-        <div class="content-card">
-            <h1 class="card-title">服たちの新しい人生</h1>
-            <p class="card-content">
-                仕分けが完了した服たちは、それぞれ異なる道を歩み始めます。
-                <br>
-                どの道も、服に新しい価値と意味を与える大切な役割を果たしています。
-                <br><br>
-                ここでは、3つの主要な行き先とその特徴を詳しく見ていきましょう。
+            <p style="margin: 25px 0 0 0; font-size: 16px; line-height: 1.8; color: rgb(66, 66, 66);">
+                ⚡ <strong>判定：</strong>外観が良好であれば「リユース候補」、多少の問題があれば「リサイクル候補」へ
             </p>
         </div>
 
-        <!-- リユースの道 -->
-        <div class="content-card">
-            <h2 class="card-title">🔄 リユースの道</h2>
-            <p class="card-content">
-                <strong>約30%の服が選ばれる道</strong>
-                • 海外輸出：年間約15万トン<br>
-                • 主な輸出先：東南アジア、アフリカ、中南米
+        <!-- 基準2: 素材の確認 -->
+        <div style="background-color: rgb(255, 243, 224); padding: 40px; border-radius: 12px; margin: 40px 0;">
+            <h3 style="margin: 0 0 25px 0; font-size: 24px; color: rgb(230, 81, 0);">🧵 基準2: 素材の確認</h3>
+            <p style="font-size: 17px; line-height: 2; margin-bottom: 25px;">
+                服のタグを確認し、何で作られているかを調べます。
             </p>
-            <div class="btn">
-                <a class="dl" href="reuse.html"><span>リユースの詳細を見る</span></a>
+            <div style="background-color: white; padding: 30px; border-radius: 10px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div style="background-color: rgb(232, 245, 233); padding: 20px; border-radius: 8px;">
+                        <p style="margin: 0; font-weight: bold; color: rgb(27, 94, 32);">✅ リサイクルしやすい素材</p>
+                        <ul style="margin: 10px 0 0 0; font-size: 17px; line-height: 2;">
+                            <li>綿100%</li>
+                            <li>ポリエステル100%</li>
+                            <li>ウール100%</li>
+                        </ul>
+                    </div>
+                    <div style="background-color: rgb(255, 243, 224); padding: 20px; border-radius: 8px;">
+                        <p style="margin: 0; font-weight: bold; color: rgb(230, 81, 0);">⚠️ リサイクル困難な素材</p>
+                        <ul style="margin: 0; font-size: 17px; line-height: 2;">
+                            <li>混合素材（複数繊維）</li>
+                            <li>特殊加工素材</li>
+                            <li>装飾が多い服</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p style="margin: 25px 0 0 0; font-size: 16px; line-height: 1.8; color: rgb(66, 66, 66);">
+                ⚡ <strong>判定：</strong>単一素材なら「リサイクル向き」、混合素材は「処理が困難」
+            </p>
+        </div>
+
+        <!-- 基準3: ブランド・デザイン -->
+        <div style="background-color: rgb(232, 245, 233); padding: 40px; border-radius: 12px; margin: 40px 0;">
+            <h3 style="margin: 0 0 25px 0; font-size: 24px; color: rgb(27, 94, 32);">👔 基準3: ブランド・デザイン</h3>
+            <p style="font-size: 17px; line-height: 2; margin-bottom: 25px;">
+                ブランドやデザインの人気度も重要な判断材料です。
+            </p>
+            <div style="background-color: white; padding: 30px; border-radius: 10px;">
+                <p style="margin: 0 0 20px 0; font-size: 17px; line-height: 2;">
+                    <strong>人気ブランド</strong>の服や<strong>流行のデザイン</strong>は、状態が多少悪くてもリユース市場で需要があります。
+                </p>
+                <div style="background-color: rgb(240, 248, 255); padding: 20px; border-radius: 8px;">
+                    <p style="margin: 0; line-height: 1.8; color: rgb(66, 66, 66);">
+                        💡 海外では、日本のユニクロやGUなどのファストファッションブランドも人気が高く、中古でも十分に価値があります。
+                    </p>
+                </div>
+            </div>
+            <p style="margin: 25px 0 0 0; font-size: 16px; line-height: 1.8; color: rgb(66, 66, 66);">
+                ⚡ <strong>判定：</strong>人気ブランドやトレンドデザインは「リユース優先」
+            </p>
+        </div>
+
+        <!-- 基準4: サイズと種類 -->
+        <div style="background-color: rgb(243, 229, 245); padding: 40px; border-radius: 12px; margin: 40px 0;">
+            <h3 style="margin: 0 0 25px 0; font-size: 24px; color: rgb(106, 27, 154);">📏 基準4: サイズと種類</h3>
+            <p style="font-size: 17px; line-height: 2; margin-bottom: 25px;">
+                服のサイズや種類によって、需要が異なります。
+            </p>
+            <div style="background-color: white; padding: 30px; border-radius: 10px;">
+                <p style="margin: 0 0 20px 0; font-weight: bold; font-size: 18px; color: rgb(106, 27, 154);">需要の高い服</p>
+                <ul style="line-height: 2.5; font-size: 17px; margin: 0 0 25px 0;">
+                    <li><strong>大きめサイズ</strong>：欧米やアフリカで需要高</li>
+                    <li><strong>Tシャツ・ジーンズ</strong>：世界共通で人気</li>
+                    <li><strong>子供服</strong>：成長が早いため中古市場が大きい</li>
+                    <li><strong>作業着</strong>：耐久性があれば需要あり</li>
+                </ul>
+                <div style="background-color: rgb(255, 243, 224); padding: 20px; border-radius: 8px;">
+                    <p style="margin: 0; line-height: 1.8; color: rgb(66, 66, 66);">
+                        ⚠️ 逆に、<strong>極端に小さいサイズ</strong>や<strong>特殊な用途の服</strong>（着物、スーツなど）は、リユース先が限られます。
+                    </p>
+                </div>
+            </div>
+            <p style="margin: 25px 0 0 0; font-size: 16px; line-height: 1.8; color: rgb(66, 66, 66);">
+                ⚡ <strong>判定：</strong>需要の高いサイズ・種類は「リユース」、特殊なものは「リサイクルまたは廃棄」
+            </p>
+        </div>
+
+        <!-- 基準5: 衛生状態 -->
+        <div style="background-color: rgb(255, 240, 245); padding: 40px; border-radius: 12px; margin: 40px 0;">
+            <h3 style="margin: 0 0 25px 0; font-size: 24px; color: rgb(194, 24, 91);">🧼 基準5: 衛生状態</h3>
+            <p style="font-size: 17px; line-height: 2; margin-bottom: 25px;">
+                最も重要な基準の一つが、<strong>衛生面</strong>です。
+            </p>
+            <div style="background-color: white; padding: 30px; border-radius: 10px;">
+                <p style="margin: 0 0 20px 0; font-weight: bold; font-size: 18px; color: rgb(194, 24, 91);">チェック項目</p>
+                <ul style="line-height: 2.5; font-size: 17px; margin: 0 0 25px 0;">
+                    <li><strong>臭い</strong>：カビ臭や強い汗の臭い</li>
+                    <li><strong>カビ</strong>：黒カビや白カビの発生</li>
+                    <li><strong>虫食い</strong>：虫による被害の有無</li>
+                    <li><strong>湿気</strong>：湿ったままの状態</li>
+                </ul>
+                <div style="background-color: rgb(255, 243, 224); padding: 20px; border-radius: 8px;">
+                    <p style="margin: 0; font-weight: bold; color: rgb(230, 81, 0); margin-bottom: 10px;">⚠️ 重要な注意点</p>
+                    <p style="margin: 0; line-height: 1.8; color: rgb(66, 66, 66);">
+                        衛生面で問題がある服は、<strong>他の服にも影響を与える</strong>ため、即座に廃棄されます。特にカビが発生した服は、リユースもリサイクルもできません。
+                    </p>
+                </div>
+            </div>
+            <p style="margin: 25px 0 0 0; font-size: 16px; line-height: 1.8; color: rgb(66, 66, 66);">
+                ⚡ <strong>判定：</strong>衛生的に問題があれば「即廃棄」
+            </p>
+        </div>
+
+        <h2 style="margin-top: 80px; margin-bottom: 40px;">仕分け後の3つの道</h2>
+
+        <div style="background-color: rgb(240, 248, 255); padding: 35px; border-radius: 12px; margin: 40px 0;">
+            <p style="font-size: 18px; line-height: 2; margin-bottom: 30px;">
+                これら5つの基準をもとに、服は以下の<strong>3つの道</strong>に分けられます。
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 30px;">
+                <div style="background-color: rgb(232, 245, 233); padding: 30px; border-radius: 10px; text-align: center;">
+                    <p style="margin: 0 0 15px 0; font-size: 32px;">♻️</p>
+                    <p style="margin: 0; font-weight: bold; font-size: 20px; color: rgb(27, 94, 32); margin-bottom: 10px;">リユース</p>
+                    <p style="margin: 0; font-size: 16px; line-height: 1.8;">約30〜40%</p>
+                </div>
+                <div style="background-color: rgb(227, 242, 253); padding: 30px; border-radius: 10px; text-align: center;">
+                    <p style="margin: 0 0 15px 0; font-size: 32px;">🔄</p>
+                    <p style="margin: 0; font-weight: bold; font-size: 20px; color: rgb(13, 71, 161); margin-bottom: 10px;">リサイクル</p>
+                    <p style="margin: 0; font-size: 16px; line-height: 1.8;">約40〜50%</p>
+                </div>
+                <div style="background-color: rgb(255, 243, 224); padding: 30px; border-radius: 10px; text-align: center;">
+                    <p style="margin: 0 0 15px 0; font-size: 32px;">🗑️</p>
+                    <p style="margin: 0; font-weight: bold; font-size: 20px; color: rgb(230, 81, 0); margin-bottom: 10px;">廃棄</p>
+                    <p style="margin: 0; font-size: 16px; line-height: 1.8;">約10〜20%</p>
+                </div>
             </div>
         </div>
 
-        <!-- リサイクルの道 -->
-        <div class="content-card">
-            <h2 class="card-title">♻️ リサイクルの道</h2>
-            <p class="card-content">
-                <strong>約50%の服が選ばれる道</strong>
-                <br><br>
-                着用には適さないが、素材として価値のある服は形を変えて生まれ変わります。
-                <br>
-                工業用ウエス、断熱材、新しい繊維製品など、様々な用途で活用されます。
-                <br><br>
-                • 工業用ウエス（清拭布）：年間約10万トン<br>
-                • 断熱材・クッション材：年間約8万トン<br>
-                • 新繊維製品への再生：年間約3万トン
+        <div style="background-color: rgb(255, 250, 240); padding: 35px; border-radius: 12px; margin: 40px 0;">
+            <p style="font-size: 18px; font-weight: bold; color: rgb(230, 81, 0); margin-bottom: 20px; line-height: 1.8;">
+                💡 あなたにできること
             </p>
-            <div class="btn">
-                <a class="dl" href="recycle.html"><span>リサイクルの詳細を見る</span></a>
+            <p style="font-size: 17px; line-height: 2; margin: 0;">
+                回収ボックスに入れる前に、服をきれいに洗濯し、よく乾かしておくことで、<strong>リユースされる可能性が高まります</strong>。<br>
+                汚れやカビがあると、どんなに良い服でも廃棄されてしまうかもしれません。
+            </p>
+        </div>
+
+        <div style="background-color: rgb(245, 245, 245); padding: 40px; border-radius: 12px; margin: 60px 0; text-align: center;">
+            <p style="font-size: 19px; font-weight: bold; color: rgb(66, 66, 66); margin: 0 0 30px 0; line-height: 1.8;">
+                ✨ 次のページでは、それぞれの道がどこへ続くのかを見ていきましょう
+            </p>
+            <div style="margin-top: 30px;">
+                <a href="rebox.html" style="background-color: rgb(158, 158, 158); color: white; text-decoration: none; padding: 18px 35px; border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block; margin-right: 20px;">← 回収ボックスへ戻る</a>
+                <a href="theme.html" style="background-color: rgb(76, 175, 80); color: white; text-decoration: none; padding: 18px 35px; border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">3つの道の詳細へ →</a>
             </div>
         </div>
-
-        <!-- 廃棄の道 -->
-        <div class="content-card">
-            <h2 class="card-title">🗑️ 廃棄の道</h2>
-            <p class="card-content">
-                <strong>約20%の服が選ばれる道</strong>
-                <br><br>
-                残念ながら、リユースもリサイクルもできない服は廃棄されます。
-                <br>
-                しかし、近年は廃棄率を下げるための技術開発が進んでおり、
-                <br>
-                将来的にはこの割合をさらに減らすことが期待されています。
-                <br><br>
-                • 主な廃棄理由：重度の汚損、複合素材、カビの発生<br>
-                • 廃棄方法：焼却処理、埋立処理<br>
-                • 課題：環境負荷の軽減、廃棄率の削減
-            </p>
-        </div>
-
-        <!-- まとめセクション -->
-        <div class="content-card">
-            <h1 class="card-title">循環する価値</h1>
-            <p class="card-content">
-                あなたが回収ボックスに入れた一枚の服は、
-                <br>
-                このようにして新しい価値を生み出し続けています。
-                <br><br>
-                リユースされる服は誰かの新しいお気に入りになり、
-                <br>
-                リサイクルされる服は全く違う形で社会に貢献し、
-                <br>
-                たとえ廃棄される服でも、その経験が技術革新につながっています。
-                <br><br>
-                次のページでは、実際にこの業界で働く人々の
-                <br>
-                生の声を聞いてみましょう。
-            </p>
-        </div>
-
-        <!-- インタビューページへのボタン -->
-        <div class="btn">
-            <a class="dl" href="interview.html"><span>現場の声を聞く</span></a>
-        </div>
-    </main>
-
-    <!-- ナビ用スクリプト（メニューのみ） -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menu-toggle');
-            const nav = document.getElementById('nav');
-            if (!menuToggle || !nav) return;
-            menuToggle.addEventListener('click', function() {
-                menuToggle.classList.toggle('active');
-                nav.classList.toggle('active');
-            });
-            document.addEventListener('click', function(e) {
-                if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
-                    menuToggle.classList.remove('active');
-                    nav.classList.remove('active');
-                }
-            });
-            nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                nav.classList.remove('active');
-            }));
-        });
-    </script>
-    <script>
-    // 背景に服をランダムに出現（最大3枚）
-    (function(){
-      const layer = document.querySelector('.bg-layer');
-      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (!layer || prefersReduced) return;
-      const colors = ['#FF6A6A','#59C3FF','#A4DE02','#FFC857','#7E7F9A','#F4A261'];
-      const maxActive = 3; let active = 0;
-      const rand = (min, max) => Math.random() * (max - min) + min;
-      function spawn(){
-        if (active >= maxActive) return schedule();
-        active++;
-        const el = document.createElement('div');
-        el.className = 'cloth';
-        el.style.setProperty('--x', Math.round(rand(8,92)) + '%');
-        el.style.setProperty('--size', Math.round(rand(64,110)) + 'px');
-        const dur = rand(16,24).toFixed(2);
-        el.style.setProperty('--dur', dur + 's');
-        const color = colors[Math.floor(rand(0, colors.length))];
-        const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#','%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
-        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
-        const cleanup = ()=>{ if (el.parentNode) { layer.removeChild(el); } active--; };
-        el.addEventListener('animationend', cleanup);
-        layer.appendChild(el);
-        setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
-        schedule();
-      }
-      function schedule(){ setTimeout(spawn, rand(1200, 3500)); }
-      schedule();
-    })();
-    </script>
+    </div>
 </body>
 </html>

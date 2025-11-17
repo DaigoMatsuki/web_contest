@@ -10,6 +10,15 @@ html {
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
+/* コンテンツページ用の明るい背景 */
+body.content-page {
+  background-color: rgb(213, 227, 247);
+}
+
+body.content-page html {
+  background-color: rgb(213, 227, 247);
+}
+
 .nav {
   background-color: rgba(14, 17, 28, 0.92);
   backdrop-filter: blur(3px);
@@ -213,4 +222,311 @@ a.button2:hover {
 
 .card3 .text p {
   margin-top: 15px;
+}
+
+/**コンテンツページ用スタイル**/
+/* コンテンツページ用のナビゲーション */
+body.content-page .nav {
+  background-color: rgba(14, 17, 28, 0.92);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 1300px;
+  z-index: 1000;
+  height: 70px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+body.content-page .nav-img {
+  width: 60px;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+body.content-page .nav-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body.content-page .nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card {
+  position: relative;
+  width: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
+  top: 350px;
+  color: rgb(24, 48, 82);
+  padding-bottom: 50vh;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+.card-title {
+  position: relative;
+  width: fit-content;
+  max-width: 1000px;
+  font-size: 50px;
+  color: rgb(24, 48, 82);
+  margin: 0 auto;
+  top: 230px;
+  border-bottom: 5px rgb(24, 48, 82) solid;
+  padding-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  /* ナビゲーション */
+  .nav {
+    top: 30px;
+    height: 60px;
+    width: 90%;
+  }
+  
+  .nav-img {
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .nav a {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+  }
+  
+  body.content-page .nav {
+    top: 30px;
+    height: 60px;
+    width: 90%;
+  }
+  
+  body.content-page .nav-img {
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  
+  body.content-page .nav-link {
+    font-size: 12px;
+  }
+  
+  body.content-page .nav a {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+  }
+  
+  /* トップページ */
+  .top-text {
+    font-size: 5vw;
+    width: 90%;
+  }
+  
+  .top-text a {
+    font-size: 16px !important;
+    padding: 15px 30px !important;
+  }
+  
+  /* メインコンテンツ */
+  .main-con1, .main-con2, .main-con3 {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .card1 {
+    font-size: 5vw;
+    top: 50%;
+    width: 90%;
+    white-space: normal;
+  }
+  
+  a.button {
+    top: 30px;
+    padding: 12px 20px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  
+  .card2 {
+    width: 100%;
+    padding: 20px;
+    position: static;
+    transform: none;
+    white-space: normal;
+  }
+  
+  .card2 .text {
+    font-size: 4.5vw;
+    position: static;
+    right: 0;
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .card2 img {
+    width: 100%;
+    position: static;
+    left: 0;
+    margin-top: 20px;
+  }
+  
+  a.button2 {
+    padding: 12px 20px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  
+  .card3 {
+    width: 100%;
+    padding: 20px;
+    position: static;
+    transform: none;
+    white-space: normal;
+  }
+  
+  .card3 img {
+    width: 100%;
+    position: static;
+    right: 0;
+    margin-bottom: 30px;
+    order: -1;
+  }
+  
+  .card3 .text {
+    font-size: 4.5vw;
+    position: static;
+    left: 0;
+    display: block;
+  }
+  
+  /* コンテンツページ */
+  .card-title {
+    font-size: 28px;
+    top: 120px;
+    width: 90%;
+    max-width: none;
+    padding: 10px;
+    border-bottom: 3px solid rgb(24, 48, 82);
+  }
+  
+  .card {
+    top: 200px;
+    width: 90%;
+    max-width: none;
+    padding: 15px;
+    padding-bottom: 30vh;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+  }
+  
+  .card h4 {
+    font-size: 18px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .card ul, .card ol {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+  
+  .card li {
+    margin-bottom: 10px;
+  }
+  
+  /* インラインスタイルのボックスをレスポンシブに */
+  .card > div[style*="padding"] {
+    padding: 15px !important;
+  }
+  
+  /* グリッドレイアウトを1列に */
+  .card div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* ナビゲーションボタン */
+  .card a[style*="padding"] {
+    padding: 15px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-link {
+    font-size: 10px;
+  }
+  
+  .nav a {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 10px;
+  }
+  
+  body.content-page .nav-link {
+    font-size: 10px;
+  }
+  
+  body.content-page .nav a {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 10px;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    top: 100px;
+  }
+  
+  .card {
+    top: 170px;
+    padding: 10px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+  }
+  
+  .card p {
+    font-size: 15px;
+  }
+  
+  .top-text {
+    font-size: 6vw;
+  }
 }
