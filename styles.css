@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: black;
+  background-color: rgb(213, 227, 247);
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
@@ -268,7 +268,7 @@ body.content-page .nav a {
   margin: 0 auto;
   top: 350px;
   color: rgb(24, 48, 82);
-  padding-bottom: 50vh;
+  padding-bottom: 100px;
 }
 
 .card p {
