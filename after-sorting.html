@@ -9,6 +9,33 @@
 </head>
 
 <body class="content-page">
+
+  <!--ハンバーガーここから -->
+  <div class="menu-wrapper">
+    <input type="checkbox" id="menu-toggle" hidden />
+
+    <label class="menu-icon" for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="overlay"></div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="theme.html">サイトテーマ</a></li>
+        <li><a href="reuse.html">リユース</a></li>
+        <li><a href="recycle.html">リサイクル</a></li>
+        <li><a href="reality.html">現状の問題</a></li>
+        <li><a href="actions.html">私たちにできること</a></li>
+        <li><a href="interview.html">インタビュー</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--ハンバーガーここまで -->
+
   <div class="nav">
     <img src="susuru.png" class="nav-img" />
     <div class="nav-link">
@@ -18,7 +45,6 @@
       <a href="reuse.html">リユース</a>
       <a href="recycle.html">リサイクル</a>
       <a href="interview.html">インタビュー</a>
-      <a href="sitemap.html">サイトマップ</a>
     </div>
   </div>
 
@@ -35,7 +61,7 @@
         <h2 style="margin-top: 60px; margin-bottom: 40px;">梱包</h2>
 
         <div style="background-color: rgb(255, 255, 255); padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-            <h3 style="margin: 0 0 25px 0; font-size: 22px; color: rgb(13, 71, 161);">📦 プレス機で圧縮</h3>
+            <h3 style="margin: 0 0 25px 0; font-size: 22px; color: rgb(13, 71, 161);">プレス機で圧縮</h3>
             <p style="font-size: 17px; line-height: 2; margin-bottom: 25px;">
                 仕分けされた服は、<strong>プレス機</strong>という機械で圧縮され、大きな塊（ベール）にまとめられます。
             </p>
@@ -48,7 +74,7 @@
                 </ul>
             </div>
             <p style="margin: 25px 0 0 0; font-size: 16px; line-height: 1.8; color: rgb(66, 66, 66);">
-                💡 1つのベールには、約<strong>100〜200kg</strong>もの衣類が詰め込まれます
+                1つのベールには、約<strong>100〜200kg</strong>もの衣類が詰め込まれます
             </p>
         </div>
 
@@ -95,7 +121,7 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 900px; margin: 0 auto;">
                 <!-- リユース -->
                 <div style="background: linear-gradient(135deg, rgb(232, 245, 233) 0%, rgb(240, 255, 240) 100%); padding: 40px; border-radius: 12px; text-align: center; border: 3px solid rgb(76, 175, 80); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <p style="margin: 0 0 20px 0; font-size: 56px;">♻️</p>
+                    <p style="margin: 0 0 20px 0; font-size: 56px;"></p>
                     <h3 style="margin: 0 0 20px 0; font-size: 24px; color: rgb(27, 94, 32);">リユース</h3>
                     <p style="margin: 0 0 25px 0; font-size: 16px; line-height: 2; color: rgb(66, 66, 66);">
                         服として再び着られる<br>
@@ -108,7 +134,7 @@
 
                 <!-- リサイクル -->
                 <div style="background: linear-gradient(135deg, rgb(227, 242, 253) 0%, rgb(240, 248, 255) 100%); padding: 40px; border-radius: 12px; text-align: center; border: 3px solid rgb(33, 150, 243); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <p style="margin: 0 0 20px 0; font-size: 56px;">🔄</p>
+                    <p style="margin: 0 0 20px 0; font-size: 56px;"></p>
                     <h3 style="margin: 0 0 20px 0; font-size: 24px; color: rgb(13, 71, 161);">リサイクル</h3>
                     <p style="margin: 0 0 25px 0; font-size: 16px; line-height: 2; color: rgb(66, 66, 66);">
                         素材として生まれ変わる<br>
@@ -125,5 +151,58 @@
             </div>
         </div>
     </div>
+
+<!-- フッター -->
+<footer style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 20px 30px; margin-top: 80px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h3 style="text-align: center; font-size: 24px; margin-bottom: 40px; color: #ecf0f1;">サイトマップ</h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px;">
+      
+      <!-- メインコンテンツ -->
+      <div>
+        <h4 style="color: #3498db; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498db;">メインコンテンツ</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="index.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">ホーム</a></li>
+          <li><a href="theme.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">サイトテーマ</a></li>
+        </ul>
+      </div>
+
+      <!-- 回収から循環まで -->
+      <div>
+        <h4 style="color: #27ae60; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #27ae60;">回収から循環まで</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="rebox.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">回収ボックス</a></li>
+          <li><a href="reuse.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リユース</a></li>
+          <li><a href="recycle.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リサイクル</a></li>
+        </ul>
+      </div>
+
+      <!-- 問題と解決策 -->
+      <div>
+        <h4 style="color: #e74c3c; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e74c3c;">問題と解決策</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="reality.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">現状の問題</a></li>
+          <li><a href="actions.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">私たちにできること</a></li>
+          <li><a href="conclusion.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">まとめ</a></li>
+        </ul>
+      </div>
+
+      <!-- その他 -->
+      <div>
+        <h4 style="color: #f39c12; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f39c12;">その他</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="interview.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">インタビュー</a></li>
+          <li><a href="dictionary.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">用語辞書</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="text-align: center; padding-top: 30px; border-top: 1px solid #7f8c8d; color: #95a5a6; font-size: 14px;">
+      <p>&copy; 2024 回収された服の行き先 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -9,6 +9,33 @@
 </head>
 
 <body class="content-page">
+
+  <!--ハンバーガーここから -->
+  <div class="menu-wrapper">
+    <input type="checkbox" id="menu-toggle" hidden />
+
+    <label class="menu-icon" for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="overlay"></div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="theme.html">サイトテーマ</a></li>
+        <li><a href="reuse.html">リユース</a></li>
+        <li><a href="recycle.html">リサイクル</a></li>
+        <li><a href="reality.html">現状の問題</a></li>
+        <li><a href="actions.html">私たちにできること</a></li>
+        <li><a href="interview.html">インタビュー</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--ハンバーガーここまで -->
+
   <div class="nav">
     <img src="susuru.png" class="nav-img" />
     <div class="nav-link">
@@ -18,11 +45,11 @@
       <a href="recycle.html">リサイクル</a>
       <a href="reality.html">現状の問題</a>
       <a href="actions.html">私たちにできること</a>
-      <a href="sitemap.html">サイトマップ</a>
+      <a href="interview.html">インタビュー</a>
     </div>
   </div>
 
-  <h1 class="card-title">📖 用語辞書</h1>
+  <h1 class="card-title">用語辞書</h1>
 
   <div class="card">
     <div class="container-medium">
@@ -36,16 +63,16 @@
       <div class="dictionary-category purple">
         <div class="dictionary-term-content">
           <h2>
-            ♻️ リユース・リサイクル関連
+            リユース・リサイクル関連
           </h2>
 
           <div class="dictionary-terms">
-            <h3>🔄 リユース（Reuse）</h3>
+            <h3>リユース（Reuse）</h3>
             <p>
               使い終わったものを、そのままの形で再び使うこと。古着の場合、洗濯や修理をして再び服として使用します。形を変えずに再利用するのが特徴です。
             </p>
 
-            <h3>♻️ リサイクル（Recycle）</h3>
+            <h3>リサイクル（Recycle）</h3>
             <p>
               使い終わったものを原料や資源に戻して、新しい製品を作ること。古着の場合、繊維をほぐして綿状に戻したり、工業用の布（ウエス）にするなど、形を変えて再利用します。
             </p>
@@ -84,7 +111,7 @@
               古着の繊維をほぐして綿状に戻したもの。自動車の内装材、クッション材、防音材、断熱材などに再利用されます。繊維を物理的にほぐす「機械式反毛」と、化学的に分解する「ケミカルリサイクル」があります。
             </p>
 
-            <h3>📦 古着ベール</h3>
+            <h3>古着ベール</h3>
             <p>
               回収された古着を圧縮して固めたもの。輸送効率を高めるため、約50〜100kgの塊にまとめられます。このベール状態で海外へ輸出されることが多いです。
             </p>
@@ -105,7 +132,7 @@
           </h2>
 
           <div class="dictionary-terms">
-            <h3>🎯 SDGs（持続可能な開発目標）</h3>
+            <h3>SDGs（持続可能な開発目標）</h3>
             <p>
               2030年までに達成すべき17の国際目標。貧困、飢餓、健康、教育、気候変動など、地球規模の課題を解決するために国連が定めました。古着リサイクルは主に「目標12：つくる責任 つかう責任」に関連しています。
             </p>
@@ -156,7 +183,7 @@
 
       <!-- 関連ページへのリンク -->
       <div class="dictionary-related-section">
-        <h3>📚 さらに詳しく知りたい方へ</h3>
+        <h3>おすすめのページ</h3>
         <div class="dictionary-related-grid">
           <a href="reuse.html" class="dictionary-related-link blue">
             <div class="dictionary-related-title">リユースの詳細</div>
@@ -178,10 +205,61 @@
       </div>
 
     </div>
-
-    <footer class="page-footer">
-      <p>&copy; 2025 古着リサイクルプロジェクト | 持続可能な未来のために</p>
-    </footer>
   </div>
+
+<!-- フッター -->
+<footer style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 20px 30px; margin-top: 80px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h3 style="text-align: center; font-size: 24px; margin-bottom: 40px; color: #ecf0f1;">サイトマップ</h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px;">
+      
+      <!-- メインコンテンツ -->
+      <div>
+        <h4 style="color: #3498db; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498db;">メインコンテンツ</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="index.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">ホーム</a></li>
+          <li><a href="theme.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">サイトテーマ</a></li>
+        </ul>
+      </div>
+
+      <!-- 回収から循環まで -->
+      <div>
+        <h4 style="color: #27ae60; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #27ae60;">回収から循環まで</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="rebox.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">回収ボックス</a></li>
+          <li><a href="reuse.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リユース</a></li>
+          <li><a href="recycle.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リサイクル</a></li>
+        </ul>
+      </div>
+
+      <!-- 問題と解決策 -->
+      <div>
+        <h4 style="color: #e74c3c; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e74c3c;">問題と解決策</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="reality.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">現状の問題</a></li>
+          <li><a href="actions.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">私たちにできること</a></li>
+          <li><a href="conclusion.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">まとめ</a></li>
+        </ul>
+      </div>
+
+      <!-- その他 -->
+      <div>
+        <h4 style="color: #f39c12; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f39c12;">その他</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="interview.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">インタビュー</a></li>
+          <li><a href="dictionary.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">用語辞書</a></li>
+          <li><a href="sitemap.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">サイトマップ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="text-align: center; padding-top: 30px; border-top: 1px solid #7f8c8d; color: #95a5a6; font-size: 14px;">
+      <p>&copy; 2024 回収された服の行き先 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+  </footer>
+
 </body>
 </html>

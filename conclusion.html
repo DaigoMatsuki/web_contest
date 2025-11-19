@@ -10,6 +10,32 @@
 
 <body class="content-page">
 
+  <!--ハンバーガーここから -->
+  <div class="menu-wrapper">
+    <input type="checkbox" id="menu-toggle" hidden />
+
+    <label class="menu-icon" for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="overlay"></div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="theme.html">サイトテーマ</a></li>
+        <li><a href="reuse.html">リユース</a></li>
+        <li><a href="recycle.html">リサイクル</a></li>
+        <li><a href="reality.html">現状の問題</a></li>
+        <li><a href="actions.html">私たちにできること</a></li>
+        <li><a href="interview.html">インタビュー</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--ハンバーガーここまで -->
+
   <div class="nav">
     <img src="susuru.png" class="nav-img" />
     <div class="nav-link">
@@ -19,7 +45,7 @@
       <a href="recycle.html">リサイクル</a>
       <a href="reality.html">現状の問題</a>
       <a href="actions.html">私たちにできること</a>
-      <a href="sitemap.html">サイトマップ</a>
+      <a href="interview.html">インタビュー</a>
     </div>
   </div>
 
@@ -43,7 +69,7 @@
 
       <div class="conclusion-important-box">
         <p class="conclusion-important-title">
-          💡 大切なのは、
+          大切なのは、
         </p>
         <p>
           情報を知った上で、<strong>「何が持続可能な行動なのか」を考え続けること</strong>です。
@@ -83,23 +109,23 @@
     </div>
 
     <h2 class="conclusion-links-section">さらに知りたい方へ</h2>
-    <p>このサイトでは、他にも関連するページを用意しています。ぜひ見てみてください：</p>
+    <p>このサイトでは、他にも関連するページを用意しています。ぜひ見てみてください</p>
     <div class="conclusion-links-grid">
-      <a href="usedclothes.html" class="conclusion-link-card blue">
-        <p>👕 古着について</p>
-        <p>古着の現状をより詳しく</p>
-      </a>
       <a href="interview.html" class="conclusion-link-card purple">
-        <p>🎤 インタビュー</p>
+        <p>インタビュー</p>
         <p>現地の声や関係者の意見</p>
       </a>
       <a href="dictionary.html" class="conclusion-link-card orange">
-        <p>📖 用語辞書</p>
+        <p>用語辞書</p>
         <p>専門用語の解説</p>
       </a>
-      <a href="sitemap.html" class="conclusion-link-card indigo">
-        <p>🗺️ サイトマップ</p>
-        <p>サイト全体の構成</p>
+      <a href="recycle.html" class="conclusion-link-card blue">
+        <p>リサイクルの詳細</p>
+        <p>再資源化の過程</p>
+      </a>
+      <a href="reuse.html" class="conclusion-link-card indigo">
+        <p>リユースの詳細</p>
+        <p>古着の再利用について</p>
       </a>
     </div>
 
@@ -111,10 +137,60 @@
     <footer class="conclusion-footer">
       <p>最後までお読みいただき、ありがとうございました。</p>
     </footer>
-
-    <footer class="page-footer">
-      <p>&copy; 2025 古着リサイクルプロジェクト | 持続可能な未来のために</p>
-    </footer>
   </div>
+
+<!-- フッター -->
+<footer style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 20px 30px; margin-top: 80px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h3 style="text-align: center; font-size: 24px; margin-bottom: 40px; color: #ecf0f1;">サイトマップ</h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px;">
+      
+      <!-- メインコンテンツ -->
+      <div>
+        <h4 style="color: #3498db; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498db;">メインコンテンツ</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="index.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">ホーム</a></li>
+          <li><a href="theme.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">サイトテーマ</a></li>
+        </ul>
+      </div>
+
+      <!-- 回収から循環まで -->
+      <div>
+        <h4 style="color: #27ae60; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #27ae60;">回収から循環まで</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="rebox.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">回収ボックス</a></li>
+          <li><a href="reuse.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リユース</a></li>
+          <li><a href="recycle.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リサイクル</a></li>
+        </ul>
+      </div>
+
+      <!-- 問題と解決策 -->
+      <div>
+        <h4 style="color: #e74c3c; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e74c3c;">問題と解決策</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="reality.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">現状の問題</a></li>
+          <li><a href="actions.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">私たちにできること</a></li>
+          <li><a href="conclusion.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">まとめ</a></li>
+        </ul>
+      </div>
+
+      <!-- その他 -->
+      <div>
+        <h4 style="color: #f39c12; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f39c12;">その他</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="interview.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">インタビュー</a></li>
+          <li><a href="dictionary.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">用語辞書</a></li>
+          <li><a href="sitemap.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">サイトマップ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="text-align: center; padding-top: 30px; border-top: 1px solid #7f8c8d; color: #95a5a6; font-size: 14px;">
+      <p>&copy; 2024 回収された服の行き先 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -1,72 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="jp">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>web</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>web</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
 <body>
-  <div class="nav">
-    <img src="susuru.png" class="nav-img" />
-    <div class="nav-link">
-      <a href="index.html">ホーム</a>
-      <a href="theme.html">サイトテーマ</a>
-      <a href="reuse.html">リユース</a>
-      <a href="recycle.html">リサイクル</a>
-      <a href="reality.html">現状の問題</a>
-      <a href="actions.html">私たちにできること</a>
-      <a href="sitemap.html">サイトマップ</a>
+        <!--ハンバーガーここから -->
+        <div class="menu-wrapper">
+            <input type="checkbox" id="menu-toggle" hidden />
+
+            <label class="menu-icon" for="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+        <div class="overlay"></div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="theme.html">サイトテーマ</a></li>
+                <li><a href="reuse.html">リユース</a></li>
+                <li><a href="recycle.html">リサイクル</a></li>
+                <li><a href="reality.html">現状の問題</a></li>
+                <li><a href="actions.html">私たちにできること</a></li>
+                <li><a href="interview.html">インタビュー</a></li>
+            </ul>
+        </nav>
     </div>
-  </div>
+    <!--ハンバーガーここまで -->
+    <div class="nav">
+        <img src="susuru.png" class="nav-img" />
+        <div class="nav-link">
+            <a href="index.html">ホーム</a>
+            <a href="theme.html">サイトテーマ</a>
+            <a href="reuse.html">リユース</a>
+            <a href="recycle.html">リサイクル</a>
+            <a href="reality.html">現状の問題</a>
+            <a href="actions.html">私たちにできること</a>
+            <a href="interview.html">インタビュー</a>
+        </div>
+    </div>        
+    <div class="top-video">
+            <video src="webtest_3.mp4" loop autoplay muted playsinline></video>
+        </div>
 
-  <div class="top-video">
-    <video src="webtest_3.mp4" loop autoplay muted></video>
-  </div>
+        <div class="top-text">
+            <h1>回収された服の行き先</h1>
+            <p>
+                あなたが入れた一枚の服はどこへ行くのでしょうか<br />海外への古着の寄付は本当に良いことなのでしょうか
+            </p>
+        </div>
 
-  <div class="top-text">
-    <h1>回収された服の行き先</h1>
-    <p>あなたが入れた一枚の服はどこへ行くのでしょうか<br>海外への古着の寄付は本当に良いことなのでしょうか</p>
-  </div>
+        <div class="main-con1" id="1">
+            <img src="wave-1200x240.svg" />
+            <div class="card1">
+                <div class="card-text">
+                    <h1 style="margin-bottom: 30px">このサイトのテーマ</h1>
+                    <p>近年、SDGsという言葉をよく耳にするようになりました。</p>
+                    <p>
+                        持続可能な社会を目指す動きが広がる中で、「古着の寄付」や「リサイクル」は、
+                    </p>
+                    <p>誰でも気軽にできる"善い行動"として認識されています。</p>
+                    <br />
+                    <p>
+                        しかし、その"善意"は本当に良い結果を生んでいるのでしょうか？
+                    </p>
+                    <p>
+                        回収ボックスに入れられた服は、どこへ行き、最終的にどんな役割に生まれ変わるのでしょう？
+                    </p>
+                    <br />
+                    <p style="font-weight: bold">
+                        それでは、集められた服が歩むストーリーを覗いてみましょう。
+                    </p>
+                </div>
+                <div class="card-text">
+                    <p>
+                        <a href="rebox.html" class="button"
+                            ><strong>回収ボックスから始まる旅へ →</strong></a
+                        >
+                    </p>
+                </div>
+                <div class="smartphone1">
+                    <h1 style="margin-bottom: 30px">このサイトのテーマ</h1>
+                    <p>
+                        近年、SDGsという言葉をよく耳にするようになりました。
+                        持続可能な社会を目指す動きが広がる中で、「古着の寄付」や「リサイクル」は、
+                        誰でも気軽にできる"善い行動"として認識されています。
+                        しかし、その"善意"は本当に良い結果を生んでいるのでしょうか？
+                        回収ボックスに入れられた服は、どこへ行き、最終的にどんな役割に生まれ変わるのでしょう？
+                    </p>
+                    <p style="font-weight: bold">
+                        それでは、集められた服が歩むストーリーを覗いてみましょう。
+                    </p>
+                    <a href="rebox.html" class="button"
+                        ><strong>回収ボックスから旅へ →</strong></a
+                    >
+                </div>
+            </div>
+        </div>
 
-  <div class="main-con1" id="1">
-    <img src="wave-1200x240.svg">
-    <div class="card1">
-      <h1 style="font-size: 2.5vw; margin-bottom: 30px;">このサイトのテーマ</h1>
-      <p>近年、SDGsという言葉をよく耳にするようになりました。</p>
-      <p>持続可能な社会を目指す動きが広がる中で、「古着の寄付」や「リサイクル」は、</p>
-      <p>誰でも気軽にできる"善い行動"として認識されています。</p>
-      <br>
-      <p>しかし、その"善意"は本当に良い結果を生んでいるのでしょうか？</p>
-      <p>回収ボックスに入れられた服は、どこへ行き、最終的にどんな役割に生まれ変わるのでしょう？</p>
-      <br>
-      <p style="font-size: 1.3em; font-weight: bold;">それでは、集められた服が歩むストーリーを覗いてみましょう。</p>
-      <p><a href="rebox.html" class="button"><strong>回収ボックスから始まる旅へ →</strong></a></p>
+        <div class="main-con2" id="2">
+            <div class="card2">
+                <div class="text">
+                    <div class="card-text">
+                        <h1>回収ボックスへ入れた<br />服はどこへ行く？</h1>
+                        <p>
+                            あなたが回収ボックスへ入れた古着はどこへ<br />行くのでしょうか。まずは回収ボックスから、<br />古着の旅を見てみませんか？
+                        </p>
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            <a href="rebox.html" class="button2"
+                                ><strong>詳しく見る</strong></a
+                            >
+                        </p>
+                    </div>
+                    <div class="smartphone2">
+                        <img src="sunrise-5863751_1920.png" />
+                        <h1>回収ボックスへ入れた<br />服はどこへ行く？</h1>
+                        <p>
+                            あなたが回収ボックスへ入れた古着はどこへ<br />行くのでしょうか。まずは回収ボックスから、<br />古着の旅を見てみませんか？
+                        </p>
+                    </div>
+                </div>
+                <img src="sunrise-5863751_1920.png" class="card-img" />
+            </div>
+        </div>
+
+        <div class="main-con3" id="3">
+            <div class="card3">
+                <img src="sunrise-5863751_1920.png" class="card-img" />
+                <div class="text">
+                    <div class="card-text">
+                        <h1>リユース・リサイクル</h1>
+                        <p>
+                            リユースについてリユースについてリユースに<br />ついてリサイクルについてリユースについてリサ<br />イクルについてリユースについてリサイクル
+                        </p>
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            <a href="reuse.html" class="button2">
+                                <strong>詳しく見る</strong>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="main-con2" id="2">
-    <div class="card2">
-      <div class="text">
-        <h1>回収ボックスへ入れた<br>服はどこへ行く？</h1>
-        <p>あなたが回収ボックスへ入れた古着はどこへ<br>行くのでしょうか。まずは回収ボックスから、<br>古着の旅を見てみませんか？</p>
-        <p><a href="rebox.html" class="button2"><strong>詳しく見る</strong></a></p>
+<!-- フッター -->
+<footer style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 20px 30px; margin-top: 80px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h3 style="text-align: center; font-size: 24px; margin-bottom: 40px; color: #ecf0f1;">サイトマップ</h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px;">
+      
+      <!-- メインコンテンツ -->
+      <div>
+        <h4 style="color: #3498db; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498db;">メインコンテンツ</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="index.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">ホーム</a></li>
+          <li><a href="theme.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">サイトテーマ</a></li>
+        </ul>
       </div>
-      <img src="sunrise-5863751_1920.png" />
-    </div>
-  </div>
 
-  <div class="main-con3" id="3">
-    <div class="card3">
-      <img src="sunrise-5863751_1920.png" />
-      <div class="text">
-        <h1>リユース・リサイクル</h1>
-        <p>リユースについてリユースについてリユースに<br>ついてリサイクルについてリユースについてリサ<br>イクルについてリユースについてリサイクル</p>
-        <p><a href="reuse.html" class="button2"><strong>詳しく見る</strong></a></p>
+      <!-- 回収から循環まで -->
+      <div>
+        <h4 style="color: #27ae60; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #27ae60;">回収から循環まで</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="rebox.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">回収ボックス</a></li>
+          <li><a href="reuse.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リユース</a></li>
+          <li><a href="recycle.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">リサイクル</a></li>
+        </ul>
+      </div>
+
+      <!-- 問題と解決策 -->
+      <div>
+        <h4 style="color: #e74c3c; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e74c3c;">問題と解決策</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="reality.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">現状の問題</a></li>
+          <li><a href="actions.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">私たちにできること</a></li>
+          <li><a href="conclusion.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">まとめ</a></li>
+        </ul>
+      </div>
+
+      <!-- その他 -->
+      <div>
+        <h4 style="color: #f39c12; font-size: 18px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f39c12;">その他</h4>
+        <ul style="list-style: none; padding: 0; line-height: 2.2;">
+          <li><a href="interview.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">インタビュー</a></li>
+          <li><a href="dictionary.html" style="color: #ecf0f1; text-decoration: none; transition: color 0.3s;">用語辞書</a></li>
+        </ul>
       </div>
     </div>
+
+    <div style="text-align: center; padding-top: 30px; border-top: 1px solid #7f8c8d; color: #95a5a6; font-size: 14px;">
+      <p>&copy; 2024 回収された服の行き先 All Rights Reserved.</p>
+    </div>
   </div>
+</footer>
 </body>
 </html>
