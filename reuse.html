@@ -5,182 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>リユース（再利用）</title>
+    <title>webcontest</title>
 </head>
 
-<body class="content-page">
-  <div class="nav">
-    <img src="susuru.png" class="nav-img" />
-    <div class="nav-link">
-      <a href="index.html">ホーム</a>
-      <a href="theme.html">サイトテーマ</a>
-      <a href="reuse.html">リユース</a>
-      <a href="recycle.html">リサイクル</a>
-      <a href="reality.html">現状の問題</a>
-      <a href="actions.html">私たちにできること</a>
-      <a href="sitemap.html">サイトマップ</a>
+<body>
+    <div class="bg-layer" aria-hidden="true">
+        <div class="gradient"></div>
+        <div class="cloth c1" aria-hidden="true"></div>
+        <div class="cloth c2" aria-hidden="true"></div>
+        <div class="cloth c3" aria-hidden="true"></div>
     </div>
-  </div>
-
-    <h1 class="card-title">リユース（再利用）</h1>
-
-    <div class="card">
-        <div style="background: linear-gradient(135deg, rgb(232, 245, 233) 0%, rgb(240, 255, 240) 100%); padding: 40px; border-radius: 12px; margin: 40px 0; text-align: center; border: 3px solid rgb(76, 175, 80);">
-            <p style="font-size: 56px; margin: 0 0 20px 0;">♻️</p>
-            <p style="font-size: 20px; line-height: 2; margin: 0; color: rgb(27, 94, 32); font-weight: bold;">
-                まだ着られる服が、世界中の新しい持ち主のもとへ
-            </p>
+    <header>
+        <div class="header">
+            <h1 class="logo brand">
+                <a href="index.html" class="brand-link" aria-label="ホームへ">
+                    <span class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">タイトル</span>
+                </a>
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="index.html">ホーム</a>
+                <a href="usedclothes.html">古着</a>
+                <a href="rebox.html">回収ボックス</a>
+                <a href="process.html">仕分け</a>
+                <a href="rs.html">古着の行き先</a>
+                <a href="reuse.html">リユース</a>
+                <a href="recycle.html">リサイクル</a>
+                <a href="interview.html">インタビュー</a>
+                <a href="sitemap.html">サイトマップ</a>
+            </nav>
         </div>
+    </header>
+    <main>
+    <div class="slogan" style="font-weight: bold;">リユースされたものはどうなる？</div>
+    <p class="reuse-text">リユースとは、再使用を意味し、物を大切にして、すぐ捨てず、繰り返して使うことを目的としています。
+    <br>
+    使わなくなったものを廃棄する前に交換や修理、寄付、買取に出すことで、再び販売や消費の段階に戻すことができ、必要な人のものとで再利用されるためです。
+    <br>
+    また廃棄されたものから有用なものを回収し、洗浄することで販売することもできるので、最終処分されるごみの削減にも寄与し、加えて採掘する天然資源を減らすことにもつながります。</p>
 
-        <h2 style="margin-top: 60px; margin-bottom: 40px;">リユースとは</h2>
+     <img src="images\reu.jpg"alt="リユース">
+        <p class="reuse-text">リユースの中でも海外に寄付された服がどうなっているか皆さんは知っているだろうか？
+        海外で安価で販売されていたりするのが想像できると思いますが、その全てが買い取られ活用されているかというと違います。
+        実は、買い取られなかった服の多くは、現地で廃棄されているのです。その量は年間約20万トンにも及びます。
+        現地の廃棄物処理システムは未発達で、焼却や埋立処分が主流です。焼却は有害なガスを発生させ、埋立地は限られた土地を圧迫します。
+        また、輸入された古着は現地の繊維産業に悪影響を及ぼすこともあります。安価な古着が市場に出回ることで、地元の繊維製品の需要が減少し、産業の衰退を招くことがあります。など書く？</p>
 
-        <div style="background-color: rgb(255, 255, 255); padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-            <p style="font-size: 18px; line-height: 2; margin-bottom: 25px;">
-                <strong>リユース</strong>とは、服をそのままの形で<strong>再び使うこと</strong>です。<br>
-                仕分けで「まだ着られる」と判断された服は、清掃・検査を経て、世界各地で新しい持ち主を待っています。
-            </p>
-            
-            <div style="background-color: rgb(240, 255, 240); padding: 30px; border-radius: 10px; border-left: 5px solid rgb(76, 175, 80);">
-                <p style="margin: 0 0 15px 0; font-weight: bold; font-size: 18px; color: rgb(27, 94, 32);">リユースされる服の条件</p>
-                <ul style="line-height: 2; font-size: 17px; margin: 0;">
-                    <li>目立った汚れやダメージがない</li>
-                    <li>ボタンやファスナーが正常に機能する</li>
-                    <li>型崩れが少ない</li>
-                    <li>まだ十分に着用できる状態</li>
-                </ul>
-            </div>
-        </div>
+<div class="recycle-link">
+    <a class="recycle" href="recycle.html">リサイクルについて</a><!--いれるならここ？？-->
+</div>
 
-        <h2 style="margin-top: 60px; margin-bottom: 40px;">リユースの流れ</h2>
+</main>
 
-        <div style="display: grid; gap: 30px; margin: 40px 0;">
-            <!-- ステップ1 -->
-            <div style="background-color: rgb(255, 255, 255); padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 6px solid rgb(76, 175, 80);">
-                <h3 style="margin: 0 0 20px 0; font-size: 22px; color: rgb(27, 94, 32);">
-                    <span style="background-color: rgb(76, 175, 80); color: white; padding: 8px 15px; border-radius: 50%; margin-right: 15px; font-size: 18px;">1</span>
-                    清掃・検査
-                </h3>
-                <p style="font-size: 17px; line-height: 2; margin: 0;">
-                    到着した服は、専門スタッフによって<strong>丁寧に検査</strong>されます。<br>
-                    汚れがある場合は洗濯し、ボタンの取り替えや簡単な修理も行われます。
-                </p>
-            </div>
-
-            <!-- ステップ2 -->
-            <div style="background-color: rgb(255, 255, 255); padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 6px solid rgb(76, 175, 80);">
-                <h3 style="margin: 0 0 20px 0; font-size: 22px; color: rgb(27, 94, 32);">
-                    <span style="background-color: rgb(76, 175, 80); color: white; padding: 8px 15px; border-radius: 50%; margin-right: 15px; font-size: 18px;">2</span>
-                    販売・配布
-                </h3>
-                <p style="font-size: 17px; line-height: 2; margin: 0;">
-                    検査を通過した服は、現地の<strong>古着店</strong>や<strong>マーケット</strong>で販売されたり、<br>
-                    支援団体を通じて<strong>必要としている人々</strong>に無料で配布されます。
-                </p>
-            </div>
-
-            <!-- ステップ3 -->
-            <div style="background-color: rgb(255, 255, 255); padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 6px solid rgb(76, 175, 80);">
-                <h3 style="margin: 0 0 20px 0; font-size: 22px; color: rgb(27, 94, 32);">
-                    <span style="background-color: rgb(76, 175, 80); color: white; padding: 8px 15px; border-radius: 50%; margin-right: 15px; font-size: 18px;">3</span>
-                    新しい生活
-                </h3>
-                <p style="font-size: 17px; line-height: 2; margin: 0;">
-                    あなたが寄付した服が、<strong>新しい持ち主</strong>の日常を彩ります。<br>
-                    服としての役割を続け、より長く大切に使われていきます。
-                </p>
-            </div>
-        </div>
-
-        <h2 style="margin-top: 60px; margin-bottom: 40px;">世界のリユース</h2>
-
-        <div style="background-color: rgb(255, 255, 255); padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-            <h3 style="margin: 0 0 25px 0; font-size: 22px; color: rgb(27, 94, 32);">🌍 主なリユース先</h3>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-                <!-- 東南アジア -->
-                <div style="background-color: rgb(240, 255, 240); padding: 25px; border-radius: 10px;">
-                    <h4 style="margin: 0 0 15px 0; font-size: 18px; color: rgb(27, 94, 32);">🇹🇭 東南アジア</h4>
-                    <p style="margin: 0; font-size: 15px; line-height: 2;">
-                        タイ、フィリピン、ベトナムなどでは、古着市場が非常に活発。おしゃれなアイテムとして人気があります。
-                    </p>
-                </div>
-
-                <!-- アフリカ -->
-                <div style="background-color: rgb(240, 255, 240); padding: 25px; border-radius: 10px;">
-                    <h4 style="margin: 0 0 15px 0; font-size: 18px; color: rgb(27, 94, 32);">🇰🇪 アフリカ</h4>
-                    <p style="margin: 0; font-size: 15px; line-height: 2;">
-                        ケニア、ガーナなどでは「ミツモニ」と呼ばれる古着市場があり、多くの人の生活を支えています。
-                    </p>
-                </div>
-
-                <!-- 中東・南米 -->
-                <div style="background-color: rgb(240, 255, 240); padding: 25px; border-radius: 10px;">
-                    <h4 style="margin: 0 0 15px 0; font-size: 18px; color: rgb(27, 94, 32);">🌎 中東・南米</h4>
-                    <p style="margin: 0; font-size: 15px; line-height: 2;">
-                        エジプト、メキシコなどでも古着は重要な衣料品源となっています。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <h2 style="margin-top: 60px; margin-bottom: 40px;">リユースの意義</h2>
-
-        <div style="background-color: rgb(240, 255, 240); padding: 40px; border-radius: 12px; margin: 40px 0; border: 2px solid rgb(76, 175, 80);">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                <!-- 環境への貢献 -->
-                <div style="text-align: center;">
-                    <p style="font-size: 48px; margin: 0 0 15px 0;">🌱</p>
-                    <h3 style="margin: 0 0 15px 0; font-size: 20px; color: rgb(27, 94, 32);">環境への貢献</h3>
-                    <p style="margin: 0; font-size: 16px; line-height: 2;">
-                        新しい服を作る必要がなくなり、<br>
-                        CO₂削減・資源節約に貢献
-                    </p>
-                </div>
-
-                <!-- 経済的価値 -->
-                <div style="text-align: center;">
-                    <p style="font-size: 48px; margin: 0 0 15px 0;">💰</p>
-                    <h3 style="margin: 0 0 15px 0; font-size: 20px; color: rgb(27, 94, 32);">経済的価値</h3>
-                    <p style="margin: 0; font-size: 16px; line-height: 2;">
-                        古着業界で働く人々の<br>
-                        雇用創出・経済活動に貢献
-                    </p>
-                </div>
-
-                <!-- 社会貢献 -->
-                <div style="text-align: center;">
-                    <p style="font-size: 48px; margin: 0 0 15px 0;">🤝</p>
-                    <h3 style="margin: 0 0 15px 0; font-size: 20px; color: rgb(27, 94, 32);">社会貢献</h3>
-                    <p style="margin: 0; font-size: 16px; line-height: 2;">
-                        衣服を必要とする人々に<br>
-                        手頃な価格で提供
-                    </p>
-                </div>
-            </div>
-
-            <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid rgb(200, 230, 201); text-align: center;">
-                <p style="font-size: 18px; line-height: 2; margin: 0; color: rgb(27, 94, 32); font-weight: bold;">
-                    あなたの寄付した服が、世界中の誰かの笑顔をつくっています 😊
-                </p>
-            </div>
-        </div>
-
-        <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid rgb(224, 224, 224);">
-            <div style="text-align: center; margin-bottom: 20px;">
-                <a href="after-sorting.html" style="background-color: rgb(76, 175, 80); color: white; text-decoration: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block; margin-right: 15px;">← 仕分け後の流れに戻る</a>
-                <a href="recycle.html" style="background-color: rgb(33, 150, 243); color: white; text-decoration: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">リサイクルを見る →</a>
-            </div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="reality.html" style="background-color: #2196F3; color: white; text-decoration: none; padding: 16px 50px; border-radius: 8px; font-size: 17px; font-weight: bold; display: inline-block;">次に進む →</a>
-            </div>
-        </div>
-
-        <footer class="page-footer">
-          <p>&copy; 2025 古着リサイクルプロジェクト | 持続可能な未来のために</p>
-        </footer>
-    </div>
-
+<script>
+    // ハンバーガーメニュー制御
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        if (!menuToggle || !nav) return;
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+        document.addEventListener('click', function(e) {
+            if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        }));
+    });
+</script>
 </body>
-
 </html>
