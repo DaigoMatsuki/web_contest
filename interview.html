@@ -2,23 +2,252 @@
 <html lang="ja">
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="content.css">
-  <title>webcontest</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>インタビュー - webcontest</title>
 </head>
-<div class="nav">
-  <img src="susuru.png">
-  <div class="nav-link">
-    <a href="index.html">ホーム</a>
-    <a href="usedclothes.html">古着</a>
-    <a href="rebox.html">回収ボックス</a>
-    <a href="recycle.html">リユース・リサイクル</a>
-    <a href="interview.html">インタビュー</a>
-    <a href="sitemap.html">サイトマップ</a>
-  </div>
-</div>
-<h1 class="card-title">インタビュー</h1>
-<div class="card">
-  </body>
 
+<body>
+  <div class="nav">
+    <img src="susuru.png" class="nav-img" />
+    <div class="nav-link">
+      <a href="index.html">ホーム</a>
+      <a href="theme.html">サイトテーマ</a>
+      <a href="reuse.html">リユース</a>
+      <a href="recycle.html">リサイクル</a>
+      <a href="reality.html">現状の問題</a>
+      <a href="actions.html">私たちにできること</a>
+      <a href="sitemap.html">サイトマップ</a>
+    </div>
+  </div>
+
+<h1 class="card-title">📋 インタビュー対象企業</h1>
+
+<div class="card">
+
+  <div class="interview-intro">
+    <p>
+      自分たち消費者とは違う視点からこの問題を知るために、<br>
+      資源回収やリサイクルを実施している<strong>2つの企業</strong>にインタビューを実施。<br>
+      実際の現場で働く方々の声を聞くことで、古着リサイクルの<strong>実態と課題</strong>をより深く理解しました。
+    </p>
+  </div>
+
+  <!-- 目次 -->
+  <div class="interview-toc">
+    <h3>📑 このページの内容</h3>
+    <div class="interview-toc-grid">
+      <a href="#company1" class="interview-toc-link green">
+        <strong>1️⃣ 山發日本株式会社</strong><br>
+        <span>東南アジアへの輸出と200種分別</span>
+      </a>
+      <a href="#company2" class="interview-toc-link blue">
+        <strong>2️⃣ 株式会社斎藤英次商店</strong><br>
+        <span>総合リサイクル企業の取り組み</span>
+      </a>
+      <a href="#learnings" class="interview-toc-link darkgreen">
+        <strong>🎯 インタビューから学んだこと</strong><br>
+        <span>現場の声から得た重要な気づき</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 企業カード 2カラムレイアウト -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(450px, 1fr)); gap:30px; margin-bottom:50px;">
+    
+    <!-- 山發日本株式会社 -->
+    <div id="company1" class="company-card-green" style="padding:35px; border-radius:20px;">
+    <div class="company-header" style="margin-bottom:30px;">
+      <div class="company-number-green">1</div>
+      <h3 class="company-title-green" style="font-size:28px;">山發日本株式会社</h3>
+    </div>
+    
+    <div class="company-desc-green" style="background:#f1f8e9; padding:30px; border-radius:15px; margin-bottom:30px;">
+      <h4 style="font-size:22px; color:#1b5e20; margin-bottom:20px;">🌏 事業内容</h4>
+      <p style="font-size:17px; line-height:2.2; color:#2e7d32;">
+        古着の<strong>回収・買取</strong>を行い、主に<strong style="color:#1b5e20;">東南アジア（特にマレーシア）へ輸出</strong>しています。<br>
+        現地で<strong style="color:#1b5e20; font-size:18px;">200種以上に細かく分別</strong>し、状態の良いものはリユース（再使用）、リユースできないものは工業ウエスや反毛（再生繊維）に加工することで、廃棄物を減らし、資源の有効利用を追求するリサイクル事業を展開しています。
+      </p>
+    </div>
+
+    <div style="background:white; padding:25px; border-radius:12px; margin-bottom:25px;">
+      <h4 style="font-size:19px; color:#2e7d32; margin-bottom:15px;">💡 山發日本株式会社の特徴</h4>
+      <ul style="list-style:none; padding:0;">
+        <li style="padding:12px 0; border-bottom:1px solid #e0e0e0; font-size:16px; line-height:1.8;">
+          <strong style="color:#1b5e20;">✓ 東南アジアへの輸出ルート確立</strong><br>
+          <span style="color:#666; font-size:15px;">→ 国際的なリサイクルネットワークを構築し、日本の古着を必要とする地域へ効率的に届けています</span>
+        </li>
+        <li style="padding:12px 0; border-bottom:1px solid #e0e0e0; font-size:16px; line-height:1.8;">
+          <strong style="color:#1b5e20;">✓ 徹底した分別システム</strong><br>
+          <span style="color:#666; font-size:15px;">→ 200種類以上の細かな分類により、それぞれの古着を最適な用途へ振り分けています</span>
+        </li>
+        <li style="padding:12px 0; font-size:16px; line-height:1.8;">
+          <strong style="color:#1b5e20;">✓ 多段階リサイクル</strong><br>
+          <span style="color:#666; font-size:15px;">→ リユース→工業ウエス→反毛と、段階的に資源を最大限活用する仕組みを実現</span>
+        </li>
+      </ul>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div style="background:#e8f5e9; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">📦</p>
+        <p style="font-size:14px; font-weight:bold; color:#1b5e20;">回収・買取</p>
+      </div>
+      <div style="background:#e8f5e9; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">🚢</p>
+        <p style="font-size:14px; font-weight:bold; color:#1b5e20;">海外輸出</p>
+      </div>
+      <div style="background:#e8f5e9; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">🔍</p>
+        <p style="font-size:14px; font-weight:bold; color:#1b5e20;">200種分別</p>
+      </div>
+      <div style="background:#e8f5e9; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">♻️</p>
+        <p style="font-size:14px; font-weight:bold; color:#1b5e20;">再生加工</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- 株式会社斎藤英次商店 -->
+    <div id="company2" class="company-card-blue" style="padding:35px; border-radius:20px;">
+    <div class="company-header" style="margin-bottom:30px;">
+      <div class="company-number-blue">2</div>
+      <h3 class="company-title-blue" style="font-size:28px;">株式会社斎藤英次商店</h3>
+    </div>
+    
+    <div class="company-desc-blue" style="background:#e3f2fd; padding:25px; border-radius:12px; margin-bottom:20px;">
+      <h4 style="font-size:20px; color:#0d47a1; margin-bottom:15px;">🏢 事業内容</h4>
+      <p style="font-size:16px; line-height:2; color:#1565c0;">
+        千葉県・茨城県で<strong>古紙・機密文書・産業廃棄物処理</strong>を行う総合リサイクル企業。<strong style="color:#0d47a1;">「リカバリーフォース」</strong>を掲げ、カーボンニュートラル回収とESG経営を推進。
+      </p>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:10px; margin-bottom:20px;">
+      <h4 style="font-size:17px; color:#1565c0; margin-bottom:12px;">💡 特徴</h4>
+      <ul style="list-style:none; padding:0; font-size:15px; line-height:1.9; color:#555;">
+        <li style="padding:8px 0;">✓ <strong style="color:#0d47a1;">総合的な廃棄物処理能力</strong></li>
+        <li style="padding:8px 0;">✓ <strong style="color:#0d47a1;">カーボンニュートラル回収</strong></li>
+        <li style="padding:8px 0;">✓ <strong style="color:#0d47a1;">地域密着型ESG経営</strong></li>
+      </ul>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div style="background:#e3f2fd; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">📋</p>
+        <p style="font-size:14px; font-weight:bold; color:#0d47a1;">古紙回収</p>
+      </div>
+      <div style="background:#e3f2fd; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">🏭</p>
+        <p style="font-size:14px; font-weight:bold; color:#0d47a1;">産業廃棄物</p>
+      </div>
+      <div style="background:#e3f2fd; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">🌱</p>
+        <p style="font-size:14px; font-weight:bold; color:#0d47a1;">カーボンニュートラル</p>
+      </div>
+      <div style="background:#e3f2fd; padding:15px; border-radius:8px; text-align:center;">
+        <p style="font-size:28px; margin-bottom:5px;">🤝</p>
+        <p style="font-size:14px; font-weight:bold; color:#0d47a1;">ESG経営</p>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <!-- 2カラムグリッド終了 -->
+
+  <div id="learnings" style="text-align:center; margin:60px 0 40px 0;">
+    <h2 style="font-size:32px; color:#1b5e20; border-bottom:3px solid #1b5e20; display:inline-block; padding-bottom:10px;">
+      🎯 インタビューから学んだこと
+    </h2>
+    <p style="font-size:16px; color:#666; margin-top:15px;">
+      現場のプロフェッショナルから教わった、古着リサイクルの本質
+    </p>
+  </div>
+
+  <div class="highlight-box-green" style="padding:50px; border-radius:20px;">
+    <div class="text-center" style="margin-bottom:40px;">
+      <p class="card-hero-icon" style="font-size:48px;">🎯</p>
+      <h3 style="font-size:28px; color:#1b5e20; margin-top:15px;">私たちが得た重要な気づき</h3>
+      <p style="font-size:16px; color:#2e7d32; margin-top:10px;">
+        実際の現場で働く方々との対話を通じて深まった理解
+      </p>
+    </div>
+
+    <div class="card-grid-4" style="margin-bottom:40px;">
+      <div class="card-white" style="margin:0; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:30px; border-radius:12px;">
+        <h4 style="font-size:20px; color:#1b5e20; margin-bottom:15px;">👥 人の力の重要性</h4>
+        <p style="font-size:16px; line-height:2.1; color:#424242;">
+          古着リサイクルは機械だけでは成り立たず、熟練した人材による判断と作業が不可欠であることを学びました。<br><br>
+          特に<strong style="color:#2e7d32;">品質判定</strong>や<strong style="color:#2e7d32;">適切な分類</strong>には、長年の経験と専門知識が必要です。
+        </p>
+      </div>
+
+      <div class="card-white" style="margin:0; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:30px; border-radius:12px;">
+        <h4 style="font-size:20px; color:#1b5e20; margin-bottom:15px;">🔄 循環の仕組み</h4>
+        <p style="font-size:16px; line-height:2.1; color:#424242;">
+          一着の服が最終的に廃棄されるまでに、複数回の「生まれ変わり」を経験できることがわかりました。<br><br>
+          <strong style="color:#2e7d32;">リユース→工業ウエス→反毛</strong>と、段階的に資源を活用する仕組みが確立されています。
+        </p>
+      </div>
+
+      <div class="card-white" style="margin:0; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:30px; border-radius:12px;">
+        <h4 style="font-size:20px; color:#1b5e20; margin-bottom:15px;">🌍 社会的意義</h4>
+        <p style="font-size:16px; line-height:2.1; color:#424242;">
+          古着リサイクルは環境問題の解決だけでなく、雇用創出や国際協力にもつながる重要な事業であることを理解しました。<br><br>
+          <strong style="color:#2e7d32;">地域社会</strong>と<strong style="color:#2e7d32;">世界</strong>、両方に貢献する取り組みです。
+        </p>
+      </div>
+
+      <div class="card-white" style="margin:0; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:30px; border-radius:12px;">
+        <h4 style="font-size:20px; color:#1b5e20; margin-bottom:15px;">💼 企業の責任</h4>
+        <p style="font-size:16px; line-height:2.1; color:#424242;">
+          両社とも単なる利益追求ではなく、<strong style="color:#2e7d32;">ESG経営</strong>や<strong style="color:#2e7d32;">SDGs</strong>を意識した事業展開をしていることに感銘を受けました。<br><br>
+          持続可能な社会の実現に向けた強い意志を感じました。
+        </p>
+      </div>
+    </div>
+
+    <div style="background:white; padding:35px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <p style="font-size:18px; line-height:2.2; color:#1b5e20; font-weight:bold; text-align:center;">
+        🌟 現場の声を聞くことで、古着リサイクルの奥深さと可能性を実感できました 🌟
+      </p>
+      <p style="font-size:16px; line-height:2; color:#2e7d32; text-align:center; margin-top:15px;">
+        私たち消費者一人ひとりの行動が、この循環の輪を支えています
+      </p>
+    </div>
+  </div>
+
+  <div class="box-gray" style="padding:40px; border-radius:15px; margin:50px 0;">
+    <div style="text-align:center; margin-bottom:25px;">
+      <p style="font-size:42px; margin-bottom:15px;">✨</p>
+      <h3 style="font-size:24px; color:#424242; margin-bottom:20px;">インタビューを終えて</h3>
+    </div>
+    <p style="font-size:17px; line-height:2.3; color:#616161; text-align:center;">
+      このインタビューを通じて、私たち一般消費者には見えない<br>
+      <strong style="color:#1b5e20; font-size:18px;">古着リサイクルの複雑で重要な仕組み</strong>を深く理解することができました。<br><br>
+      
+      <span style="display:inline-block; background:#e8f5e9; padding:20px 30px; border-radius:10px; margin:20px 0;">
+        <strong style="font-size:18px; color:#1b5e20;">みなさんも、服を手放すときは、<br>その先に広がる可能性を想像してみてください。</strong>
+      </span><br><br>
+      
+      一着の服が<strong style="color:#1565c0;">200種類以上</strong>に分別され、<br>
+      <strong style="color:#1565c0;">東南アジア</strong>で新しい役割を担い、<br>
+      最終的には<strong style="color:#1565c0;">工業ウエスや反毛</strong>として生まれ変わる。<br><br>
+      
+      そんな<strong style="color:#c2185b; font-size:18px;">循環の物語</strong>の一部に、<br>
+      私たち一人ひとりが参加できるのです。
+    </p>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html" class="bottom-button-home" style="margin-right:20px;">← ホームに戻る</a>
+    <a href="sitemap.html" class="bottom-button-gray">サイトマップ →</a>
+  </div>
+
+  <footer class="page-footer">
+    <p>&copy; 2025 古着リサイクルプロジェクト | 持続可能な未来のために</p>
+  </footer>
+</div>
+
+</body>
 </html>
