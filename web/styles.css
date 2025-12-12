@@ -1,0 +1,280 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+
+
+@media screen and (min-width:699px){
+  
+ 
+
+.menu-wrapper{
+    position:relative;
+}
+
+.menu{
+    background-color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+    width:100%;
+    position:fixed;
+    z-index:1000;
+}
+
+.menu li{
+    margin-left:5px;
+    margin-right:5px;
+    display:inline-block;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+}
+  .top{
+    background:#131927;
+    height:700px;
+    width:100%;
+
+  }
+  
+  .top video{
+    object-fit:cover;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:10;
+
+  }
+  
+  .con1{
+    background:#2b5592;
+    height:700px;
+    display:inline-block;
+    width:100%;
+    position:relative;
+    top:10px;
+    z-index:100;
+  }
+  .con1 img{
+    width:100%;
+    position:absolute;
+    bottom:660px;
+  }
+  
+  .con2{
+    background:#6592d2;
+    display:inline-block;
+    width:100%;
+    height:850px;
+    position:relative;
+    bottom:15px;
+    z-index:100;
+  }
+  
+  .con2 img{
+    width:100%;
+    transform:rotate(180deg);
+  }
+  
+  .con3{
+    background:#2b5592;
+    display:inline-block;
+    width:100%;
+    height:900px;
+    position:relative;
+    bottom:15px;
+    z-index:100;
+  }
+  .con3 img{
+    width:100%;
+    transform:scale(-1,1);
+    position:absolute;
+    bottom:850px;
+  }
+  
+  .footer{
+    position:relative;
+    bottom:0;
+    background:#121a2b;
+    height:500px;
+    z-index:100;
+  }
+  .footer img{
+    width:100%;
+    position:absolute;
+    bottom:500px;
+  }
+}
+@media screen and (max-width:700px){
+  
+  
+   .top{
+    background:#131927;
+    height:100vh;
+    width:100%;
+
+  }
+  
+  .top video{
+    object-fit:cover;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:10;
+
+  }
+  
+   .con1{
+    background:#2b5592;
+    height:100vh;
+    display:inline-block;
+    width:100%;
+    position:relative;
+    top:10px;
+    z-index:100;
+  }
+  .con1 img{
+    width:100%;
+    position:absolute;
+    bottom:100vh;
+  }
+  
+  .con2{
+    background:#6592d2;
+    display:inline-block;
+    width:100%;
+    height:100vh;
+    position:relative;
+    bottom:15px;
+    z-index:100;
+  }
+  
+  .con2 img{
+    width:100%;
+    transform:rotate(180deg);
+  }
+  
+  .con3{
+    background:#2b5592;
+    display:inline-block;
+    width:100%;
+    height:100vh;
+    position:relative;
+    bottom:15px;
+    z-index:100;
+  }
+  .con3 img{
+    width:100%;
+    transform:scale(-1,1);
+    position:absolute;
+    bottom:100vh;
+  }
+  
+  .footer{
+    position:relative;
+    bottom:0;
+    background:#121a2b;
+    height:500px;
+    z-index:100;
+  }
+  .footer img{
+    width:100%;
+    position:absolute;
+    bottom:500px;
+  }
+  
+  
+    .menu-wrapper {
+  position: relative;
+  z-index:1000;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 30px;
+  position: fixed; 
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 3;
+  display: inline-block;
+
+}
+
+.menu-icon span {
+  display: block;
+  height: 4px;
+  margin: 6px 0;
+  background:white;
+  border-radius: 2px;
+ box-shadow:0 0 4px black;
+  transition: 0.4s;
+}
+
+/* ハンバーガーがXに変形 */
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* オーバーレイ背景 */
+.overlay {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  background-color:rgba(128, 128, 128, 0.45);
+  pointer-events: none;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+#menu-toggle:checked ~ .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* メニュー本体（左から出す） */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* ← 初期位置を左へ */
+  width: 250px;
+  height: 100%;
+  background: black;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  transition: left 0.4s ease;
+  z-index: 2;
+}
+
+#menu-toggle:checked ~ .menu {
+  left: 0; /* ← 開いたときは左0へ */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 60px 20px;
+}
+
+.menu li {
+  margin: 20px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #007bff;
+}
+
+}
