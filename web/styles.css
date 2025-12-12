@@ -65,7 +65,7 @@ html{
     bottom:660px;
   }
   
-  .unblur-img{
+  .unblur{
      filter: blur(20px);
      opacity: 0.4;
   }
@@ -115,7 +115,7 @@ html{
   }
 }
 @media screen and (max-width:700px){
-   .unblur-img{
+   .unblur{
      filter: blur(20px);
      opacity: 0.4;
   }

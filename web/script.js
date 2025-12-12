@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
   video.style.filter = `blur(${blur}px)`;
 });
 
-const img = document.querySelector('.unblur-img');
+const img = document.querySelector('.unblur');
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
