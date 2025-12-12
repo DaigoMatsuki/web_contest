@@ -29,3 +29,6 @@ window.addEventListener('scroll', () => {
   img.style.filter = `blur(${blur}px)`;
   img.style.opacity = opacity;
 });
+
+window.addEventListener('scroll', updateImage);
+document.addEventListener('DOMContentLoaded', updateImage);
