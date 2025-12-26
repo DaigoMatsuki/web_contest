@@ -9,7 +9,7 @@ html {
     font-family: "Sawarabi Gothic", sans-serif;
 }
 
-/* 繧ｳ繝ｳ繝�Φ繝��繝ｼ繧ｸ逕ｨ縺ｮ譏弱ｋ縺�レ譎ｯ */
+
 body.content-page {
     background-color: rgb(213, 227, 247);
 }
@@ -17,7 +17,6 @@ body.content-page {
 body.content-page html {
     background-color: rgb(213, 227, 247);
 }
-
 
 
 .menu-wrapper {
@@ -217,40 +216,7 @@ a.button2:hover {
 
 /**繧ｳ繝ｳ繝�Φ繝��繝ｼ繧ｸ逕ｨ繧ｹ繧ｿ繧､繝ｫ**/
 /* 繧ｳ繝ｳ繝�Φ繝��繝ｼ繧ｸ逕ｨ縺ｮ繝翫ン繧ｲ繝ｼ繧ｷ繝ｧ繝ｳ */
-body.content-page .nav {
-    background-color: rgba(14, 17, 28, 0.92);
-    backdrop-filter: blur(3px);
-    position: fixed;
-    top: 40px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    max-width: 1300px;
-    z-index: 1000;
-    height: 70px;
-    border-radius: 10px;
-    white-space: nowrap;
-}
 
-body.content-page .nav-img {
-    width: 60px;
-    margin-left: 20px;
-    margin-top: 12px;
-}
-
-body.content-page .nav-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-body.content-page .nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
 .card {
     position: relative;
