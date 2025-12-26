@@ -369,6 +369,7 @@ body.content-page .nav a {
         background: white;
         border-radius: 2px;
         transition: 0.4s;
+        box-shadow: 0 0 4px black;
     }
 
     /* 繝上Φ繝舌�繧ｬ繝ｼ縺傾縺ｫ螟牙ｽ｢ */
