@@ -18,7 +18,6 @@ body.content-page html {
     background-color: rgb(213, 227, 247);
 }
 
-
 .menu-wrapper {
   position: relative;
 }
@@ -41,13 +40,6 @@ body.content-page html {
 .menu a {
   text-decoration: none;
   color: white;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .top-video {
