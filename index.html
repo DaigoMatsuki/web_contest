@@ -1,40 +1,56 @@
 <!doctype html>
 <html lang="ja">
-    
+
 <head>
-    <title>web</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web</title>
+  <link rel="stylesheet" href="home.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <div class="menu-wrapper">
-  <input type="checkbox" id="menu-toggle" hidden>
-  
-  <label class="menu-icon" for="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  
-  <div class="overlay"></div>
-  
-  <nav class="menu">
-    <ul>
-      <li><a href="#">test</a></li>
-      <li><a href="#">test</a></li>
-      <li><a href="#">test</a></li>
-      <li><a href="#">test</a></li>
-    </ul>
-  </nav>
-</div>
-    <div class="top">
-      <video src="webtest_3.mp4" loop autoplay class="top-video"></video>
+  <div class="menu-wrapper">
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <label class="menu-icon" for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="overlay"></div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="top">
+    <div class="textbox">
+      <h1>回収された服の行き先</h1>
+      <p>あなたが入れた一枚の服はどこへ行くのか<br>海外への古着の寄付は本当に良いことなのか</p>
     </div>
-  <div class="con1 unblur"><img src="wave-1200x240.svg"/></div>
-  <div class="con2"><img src="wave-1200x240.svg"/></div>
-  <div class="con3"><img src="wave-1200x240.svg"/></div>
-  <div class="footer"><img src="wave-1200x300.svg"/></div>
+    <video src="webtest_3.mp4" loop autoplay class="top-video">お使いのブラウザでは正しく表示できません</video>
+  </div>
+  <div class="con1 unblur"><img src="wave-1200x240.svg" />
+    <h1>このサイトのテーマ</h1>
+    <p>
+      近年、世界はSDGsの目標に向かって様々な行動をしています。そんな、持続可能な社会を目指す動きが広がる中で、「古着の寄付」や「リサイクル」は、誰でも気軽にできる”善い行動”として認識されています。しかし、その”善い行動”は本当に良い結果を生んでいるのでしょうか？問題があるなら、私達のすべき行動はなんでしょうか？その実態へ迫ります。
+
+      <a href="#">詳しく見る</a>
+    </p>
+  </div>
+  <div class="con2"><img src="wave-1200x240.svg" /></div>
+  <div class="con3"><img src="wave-1200x240.svg" /></div>
+  <div class="footer"></div>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 </body>
+
 </html>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
