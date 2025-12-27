@@ -151,6 +151,12 @@ html {
   z-index: 100;
 }
 
+.con2 h1 {
+  font-size: 300%;
+  color: white;
+  text-align: center;
+}
+
 .con2 img {
   width: 100%;
   transform: rotate(180deg);
@@ -171,6 +177,15 @@ html {
   transform: scale(-1, 1);
   position: absolute;
   bottom: 850px;
+}
+
+.con3 h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 300%;
 }
 
 .footer {
@@ -249,6 +264,7 @@ html {
     z-index: 100;
   }
 
+
   .con2 img {
     width: 100%;
     transform: rotate(180deg);
@@ -261,6 +277,10 @@ html {
     position: relative;
     bottom: 15px;
     z-index: 100;
+  }
+
+  .con3 h1 {
+    font-size: 30px;
   }
 
   .con3 img {
