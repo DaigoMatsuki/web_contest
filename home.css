@@ -17,36 +17,37 @@ html {
 
 
 
+@media screen and(min-width:930) {
 
+  .menu-wrapper {
+    position: relative;
+  }
 
-.menu-wrapper {
-  position: relative;
-}
+  .menu {
+    background-color: black;
+    width: 95%;
+    height: 70px;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 24px;
 
-.menu {
-  background-color: black;
-  width: 95%;
-  height: 70px;
-  position: fixed;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 24px;
+  }
 
-}
+  .menu li {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+  }
 
-.menu li {
-  margin-left: 5px;
-  margin-right: 5px;
-  display: inline-block;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .top {
@@ -358,6 +359,7 @@ html {
 
   /* メニュー本体（左から出す） */
   .menu {
+
     position: fixed;
     top: 0;
     left: -250px;
