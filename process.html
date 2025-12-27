@@ -16,8 +16,9 @@
                 <a href="index.html" class="brand-link" aria-label="ホームへ">
                     <span class="mark" aria-hidden="true">
                         <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08"/>
-                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none" stroke="#0b1b24" stroke-width="3" stroke-linejoin="round"/>
+                            <circle cx="32" cy="32" r="30" fill="#0b1b24" opacity="0.08" />
+                            <path d="M18 18 L46 18 L56 26 L48 34 L48 50 L16 50 L16 34 L8 26 Z" fill="none"
+                                stroke="#0b1b24" stroke-width="3" stroke-linejoin="round" />
                         </svg>
                     </span>
                     <span class="brand-name">タイトル</span>
@@ -41,7 +42,7 @@
             </nav>
         </div>
     </header>
- 
+
     <main>
         <div class="slogan">運命の分岐点</div>
 
@@ -56,7 +57,7 @@
                 熟練した作業員の手により、服は3つの道のいずれかに振り分けられていきます。
             </p>
         </div>
-    
+
         <!--衣類の選別-->
         <div class="sorting">
             <h2 class="sorting-title">衣類の選別現場</h2>
@@ -74,7 +75,7 @@
                 ここで服の「第二の人生」が決まるのです。
             </p>
         </div>
-        
+
         <div class="comparison">
             <h2 class="comparison-title">仕分けの基準</h2>
             <div class="card-content">
@@ -84,14 +85,14 @@
                     <br>
                     → おおむね約30%が該当
                 </p>
-                
+
                 <h3>リサイクル（形を変えて再生）</h3>
                 <p>
                     ・着用には適さないが素材として価値がある／軽度の汚れやダメージ／綿やポリエステルなど素材重視
                     <br>
                     → おおむね約50%が該当
                 </p>
-                
+
                 <h3>廃棄</h3>
                 <p>
                     ・著しい汚損や激しい破損／リサイクル困難な複合素材／湿気によるカビ発生など
@@ -118,15 +119,15 @@
 
     <!-- ナビ用スクリプト（メニューのみ） -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const menuToggle = document.getElementById('menu-toggle');
             const nav = document.getElementById('nav');
             if (!menuToggle || !nav) return;
-            menuToggle.addEventListener('click', function() {
+            menuToggle.addEventListener('click', function () {
                 menuToggle.classList.toggle('active');
                 nav.classList.toggle('active');
             });
-            document.addEventListener('click', function(e) {
+            document.addEventListener('click', function (e) {
                 if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
                     menuToggle.classList.remove('active');
                     nav.classList.remove('active');
@@ -140,34 +141,35 @@
     </script>
     <script>
         // 服をランダムに出現（最大3枚、出現間隔は不規則）
-        (function(){
-          const layer = document.querySelector('.bg-layer');
-          const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          if (!layer || prefersReduced) return;
-          const colors = ['#FF6A6A','#59C3FF','#A4DE02','#FFC857','#7E7F9A','#F4A261'];
-          const maxActive = 3; let active = 0;
-          const rand = (min, max) => Math.random() * (max - min) + min;
-          function spawn(){
-            if (active >= maxActive) return schedule();
-            active++;
-            const el = document.createElement('div');
-            el.className = 'cloth';
-            el.style.setProperty('--x', Math.round(rand(8,92)) + '%');
-            el.style.setProperty('--size', Math.round(rand(64,110)) + 'px');
-            const dur = rand(16,24).toFixed(2);
-            el.style.setProperty('--dur', dur + 's');
-            const color = colors[Math.floor(rand(0, colors.length))];
-            const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#','%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
-            el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
-            const cleanup = ()=>{ if (el.parentNode) { layer.removeChild(el); } active--; };
-            el.addEventListener('animationend', cleanup);
-            layer.appendChild(el);
-            setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
+        (function () {
+            const layer = document.querySelector('.bg-layer');
+            const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!layer || prefersReduced) return;
+            const colors = ['#FF6A6A', '#59C3FF', '#A4DE02', '#FFC857', '#7E7F9A', '#F4A261'];
+            const maxActive = 3; let active = 0;
+            const rand = (min, max) => Math.random() * (max - min) + min;
+            function spawn() {
+                if (active >= maxActive) return schedule();
+                active++;
+                const el = document.createElement('div');
+                el.className = 'cloth';
+                el.style.setProperty('--x', Math.round(rand(8, 92)) + '%');
+                el.style.setProperty('--size', Math.round(rand(64, 110)) + 'px');
+                const dur = rand(16, 24).toFixed(2);
+                el.style.setProperty('--dur', dur + 's');
+                const color = colors[Math.floor(rand(0, colors.length))];
+                const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 15 L70 15 L85 30 L72 42 L72 85 L28 85 L28 42 L15 30 Z' fill='${color.replace('#', '%23')}' stroke='%230b1b24' stroke-width='2' stroke-linejoin='round'/><circle cx='50' cy='28' r='6' fill='%23fff' opacity='0.6'/></svg>`;
+                el.style.backgroundImage = `url("data:image/svg+xml;utf8,${svg}")`;
+                const cleanup = () => { if (el.parentNode) { layer.removeChild(el); } active--; };
+                el.addEventListener('animationend', cleanup);
+                layer.appendChild(el);
+                setTimeout(cleanup, (parseFloat(dur) * 1000) + 200);
+                schedule();
+            }
+            function schedule() { setTimeout(spawn, rand(1200, 3500)); }
             schedule();
-          }
-          function schedule(){ setTimeout(spawn, rand(1200, 3500)); }
-          schedule();
         })();
     </script>
 </body>
+
 </html>
