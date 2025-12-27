@@ -1,45 +1,34 @@
 const video = document.querySelector('.top-video');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const maxBlur = 20; 
+
+  
+  const blur = Math.min(scrollY / 20, maxBlur);
+
+  video.style.filter = `blur(${blur}px)`;
+});
+
 const img = document.querySelector('.unblur');
 
-let ticking = false;
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
 
-function onScrollUpdate() {
-  const scrollY = window.scrollY || window.pageYOffset;
-  const maxBlur = 20;
+  const maxBlur = 20;      
+  const minOpacity = 0;  
+  const maxOpacity = 1;    
 
-  const blurVideo = Math.min(scrollY / 20, maxBlur);
-  if (video) {
-    video.style.willChange = 'filter, opacity';
-    video.style.filter = `blur(${blurVideo}px)`;
-  }
+  // ぼかしを減らす
+  const blur = Math.max(maxBlur - scrollY / 20, 0);
 
-  if (img) {
-    const blurImg = Math.max(maxBlur - scrollY / 20, 0);
-    const minOpacity = 0.4;
-    const maxOpacity = 1;
-    let opacity = minOpacity + scrollY / 100;
-    opacity = Math.min(opacity, maxOpacity);
-    img.style.filter = `blur(${blurImg}px)`;
-    img.style.opacity = opacity;
-  }
-}
+  // 透明度を増やす（minOpacity → maxOpacity）
+  let opacity = minOpacity + scrollY / 100;
+  opacity = Math.min(opacity, maxOpacity);
 
-function onScroll() {
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      onScrollUpdate();
-      ticking = false;
-    });
-    ticking = true;
-  }
-}
-
-window.addEventListener('scroll', onScroll);
-document.addEventListener('DOMContentLoaded', () => {
-  onScrollUpdate();
-  if (video) {
-    video.muted = true;
-    video.setAttribute('playsinline', '');
-    try { video.play(); } catch (e) {}
-  }
+  img.style.filter = `blur(${blur}px)`;
+  img.style.opacity = opacity;
 });
+
+window.addEventListener('scroll', updateImage);
+document.addEventListener('DOMContentLoaded', updateImage);
