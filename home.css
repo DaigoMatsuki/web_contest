@@ -176,7 +176,7 @@ html {
 .footer {
   width: 100%;
   position: relative;
-  background: #304458;
+  background: #2e4154;
   z-index: 100;
 }
 
@@ -273,7 +273,7 @@ html {
   .footer {
     position: relative;
     bottom: 0;
-    background: #304458;
+    background: #2e4154;
     z-index: 100;
   }
 
