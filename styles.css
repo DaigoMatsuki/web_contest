@@ -257,7 +257,7 @@ body.content-page .nav a {
 .card {
     position: relative;
     width: fit-content;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     color: rgb(24, 48, 82);
 }
@@ -326,7 +326,20 @@ body.content-page .nav a {
     all: unset;
     display: none;
 }
-/* 繝ｬ繧ｹ繝昴Φ繧ｷ繝門ｯｾ蠢� */
+
+.company-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.company-card{
+    gap:30px; 
+    margin-bottom:50px; 
+    width: 100%;
+}
+
+/* 繝ｬ繧ｹ繝昴Φ繧ｷ繝門ｯｾ蠢 */
 @media screen and (max-width: 930px) {
     .menu {
         display: block;
@@ -434,6 +447,13 @@ body.content-page .nav a {
 
     .menu a:hover {
         color: #007bff;
+    }
+    
+    .company-cards{
+    display:flex;
+    gap:30px; 
+    margin-bottom:50px; 
+    width: 100%;
     }
 }
 @media screen and (max-width: 570px) {
@@ -801,6 +821,13 @@ body.content-page .nav a {
     .card-img {
         display: none;
     }
+
+    .company-cards{
+    display:flex; 
+    gap:30px; 
+    margin-bottom:50px; 
+    width: 100%;
+}
 }
 
 /* 繝��繝槭�繝ｼ繧ｸ逕ｨ */
@@ -1177,13 +1204,16 @@ footer {
     text-align: center;
 }
 
-/* Company card component for interview page */
+
 .company-card {
     background: white;
     padding: 28px;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     margin-bottom: 24px;
+    flex: 1 1 0;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .company-card--blue {
@@ -1194,7 +1224,6 @@ footer {
     border-left: 6px solid #1b5e20;
 }
 
-/* Large modifier for more visual weight */
 .company-card--large {
     padding: 56px;
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
@@ -1273,11 +1302,9 @@ footer {
     color: #0d47a1;
 }
 
-@media screen and (max-width: 720px) {
-    .company-card .company-tags {
-        grid-template-columns: 1fr;
-    }
-}
+
+
+
 
 /* 繧ｳ繝ｳ繝�リ */
 .container-narrow {
