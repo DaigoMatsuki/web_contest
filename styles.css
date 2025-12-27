@@ -567,6 +567,21 @@ footer {
     margin-right: 20px;
 }
 
+.bottom-button-home2 {
+    display: inline-block;
+    background: rgb(63, 81, 181);
+    color: white;
+    padding: 16px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+
 .bottom-button-home:hover {
     background: #7f8c8d;
     transform: translateY(-2px);
@@ -605,6 +620,20 @@ footer {
     transition: all 0.3s ease;
     border: none;
 }
+
+.bottom-button-gray2 {
+    display: inline-block;
+    background: #95a5a6;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    }
 
 .bottom-button-gray:hover {
     background: #7f8c8d;
@@ -1897,6 +1926,21 @@ iframe {
         gap: 20px;
         margin-top: 25px;
     }
+
+    .bottom-button-gray2 {
+        display: inline-block;
+        background: #95a5a6;
+        color: white;
+        padding: 16px 35px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+        transition: all 0.3s ease;
+        border: none;
+        margin-top:10px;
+        }
 }
 @media screen and (max-width: 570px) {
     * {
