@@ -17,7 +17,7 @@ html {
 
 
 
-@media screen and(min-width:930) {
+@media screen and (min-width:930px) {
 
   .menu-wrapper {
     position: relative;
