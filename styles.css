@@ -1726,7 +1726,13 @@ iframe {
     border: none;
 }
 
-
+.card7 {
+    position: relative;
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgb(24, 48, 82);
+}
 
 /* 繝ｬ繧ｹ繝昴Φ繧ｷ繝門ｯｾ蠢 */
 @media screen and (max-width: 930px) {
@@ -1871,6 +1877,14 @@ iframe {
 
     .actions-badge {
         text-align: center;
+    }
+
+    .card7 {
+        position: relative;
+        width: fit-content;
+        max-width: 1200px;
+        margin: 0 20px;
+        color: rgb(24, 48, 82);
     }
 }
 @media screen and (max-width: 570px) {
@@ -2145,7 +2159,7 @@ iframe {
         max-width: 1000px;
         font-size: 35px;
         color: rgb(24, 48, 82);
-        margin: 160px auto 0px;
+        margin: 160px auto 20px;
         border-bottom: 5px rgb(24, 48, 82) solid;
         padding-bottom: 20px;
     }
