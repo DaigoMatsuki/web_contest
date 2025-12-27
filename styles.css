@@ -303,6 +303,10 @@ body.content-page .nav a {
     text-align: center;
 }
 
+.card h12 {
+    font-size: 22px;
+}
+
 .menu {
     display: none;
 }
