@@ -176,16 +176,10 @@ html {
 .footer {
   width: 100%;
   position: relative;
-  background: #121a2b;
-  height: 1000px;
+  background: #304458;
   z-index: 100;
 }
 
-.footer img {
-  width: 100vw;
-  position: absolute;
-  bottom: 1000px;
-}
 
 
 
@@ -279,8 +273,7 @@ html {
   .footer {
     position: relative;
     bottom: 0;
-    background: #121a2b;
-    height: 500px;
+    background: #304458;
     z-index: 100;
   }
 
