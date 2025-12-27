@@ -197,11 +197,11 @@ html {
   }
 
   .top h1 {
-    font-size: 30px;
+    font-size: 6vw;
   }
 
   .top p {
-    font-size: 20px;
+    font-size: 4vw;
   }
 
   .top video {
@@ -362,7 +362,9 @@ html {
   }
 
   .menu li {
-    margin: 20px 0;
+    width: 100%;
+    margin: 10px 0;
+    display: normal;
   }
 
   .menu a {
