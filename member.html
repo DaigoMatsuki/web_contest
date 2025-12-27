@@ -32,10 +32,7 @@
     align-items: center;
   }
 
-  @media screen and (max-width:930px){
-    .box1{
-      padding-left:200px;}
-  }
+
   .box2 {
     padding-left: 10px;
     padding-right: 10px;
@@ -53,5 +50,36 @@
 
   .box2 p {
     top: 80px;
+  }
+
+    @media screen and (max-width:930px){
+    .box1{
+      display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+      padding-left:200px;}
+
+      
+  .box2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+    margin: 0 auto;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    vertical-align: top;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .box2 p {
+    top: 80px;
+  }
   }
 </style>
